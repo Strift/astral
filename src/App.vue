@@ -5,7 +5,7 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600&display=swap');
 
 @tailwind base;
 
@@ -24,6 +24,10 @@ body {
 @tailwind utilities;
 
 .text-shadow {
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+.text-shadow-md {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 </style>
