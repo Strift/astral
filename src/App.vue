@@ -1,31 +1,29 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div id="app" class="h-full w-full">
     <router-view/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+html, body {
+  @apply .h-full .m-0;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body {
+  /*background-image: url('https://wallpaperplay.com/walls/full/3/0/7/17345.jpg');*/
+  background-image: url('./assets/background.jpg');
+  @apply .bg-cover;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+@tailwind utilities;
+
+.text-shadow {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 </style>
