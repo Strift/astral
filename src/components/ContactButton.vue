@@ -1,32 +1,41 @@
 <template>
-  <div class="flex flex-col h-full w-full font-sans text-white">
-    <HomeHeader/>
-    <div class="my-auto text-center">
-      <h1 class="font-hairline text-brand text-shadow-md leading-snug">
-        Astral
-      </h1>
-      <h2 class="text-xl text-shadow font-semibold tracking-wide">
-        Alliance | Guilde PvE semi-hardcore | Serveur PvP
-      </h2>
-    </div>
-    <HomeFooter/>
-  </div>
+  <v-popover
+    offset="16"
+    class="inline"
+  >
+    <button class="font-semibold uppercase tracking-widest text-shadow-md">Contact</button>
+    <template slot="popover">
+      <div class="text-gray-700 text-lg text-center">
+        Contactez-nous via Discord !
+      </div>
+      <ul class="mt-6">
+        <li class="flex">
+          <div>
+            <div class="font-semibold">Strift</div>
+            <div class="text-gray-500">Maître de guilde</div>
+          </div>
+          <div class="inline-flex items-center ml-10">
+            <img src="@/assets/discord-logo.svg" class="h-8 inline-block">
+            <div class="text-gray-700">Strift#0812</div>
+          </div>
+        </li>
+      </ul>
+    </template>
+  </v-popover>
 </template>
 
 <script>
-import HomeHeader from '@/components/HomeHeader'
-import HomeFooter from '@/components/HomeFooter'
+import { VPopover, VClosePopover } from 'v-tooltip'
 
 export default {
-  name: 'home',
   components: {
-    HomeHeader,
-    HomeFooter
+    VPopover,
+    VClosePopover
   }
 }
 </script>
 
-<style>
+<style type="text/css" scoped>
 .tooltip {
   display: block !important;
   z-index: 10000;
