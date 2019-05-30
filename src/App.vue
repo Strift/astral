@@ -17,9 +17,11 @@ html, body {
 
 body {
   /*background-image: url('https://wallpaperplay.com/walls/full/3/0/7/17345.jpg');*/
-  background-image: url('./assets/background.jpg');
+  background-image: url('./assets/images/background.jpg');
   @apply .bg-cover;
 }
+
+@import './assets/css/tooltip.css';
 
 @tailwind utilities;
 

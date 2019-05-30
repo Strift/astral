@@ -1,7 +1,7 @@
 <template>
   <header class="py-5 px-10 flex">
     <div class="w-32">
-      <img src="@/assets/wow-logo.png">
+      <img src="@/assets/images/wow-logo.png">
     </div>
     <nav class="ml-auto flex">
       <ul class="my-auto inline-flex">
