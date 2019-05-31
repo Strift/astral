@@ -5,7 +5,7 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,400,600&display=swap');
 
 @tailwind base;
 
