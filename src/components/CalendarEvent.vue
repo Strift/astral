@@ -1,31 +1,29 @@
 <template>
-  <div class="rounded overflow-hidden shadow">
-    <div
-      class="bg-cover bg-center h-40 flex p-4"
-      style="background-image: url('https://wow.zamimg.com/uploads/screenshots/normal/281289-molten-core.jpg')"
-    >
-      <div class="text-white mt-auto">
-        <div class="font-semibold text-lg text-shadow">
-          20h45
-        </div>
-        <div class="uppercase text-gray-300 text-sm text-shadow">
-          Molten Core
-        </div>
-      </div>
+  <article class="rounded overflow-hidden shadow">
+    <CalendarEventHeader/>
+    <div class="bg-white px-5 pt-5">
+      <CalendarEventParticipants/>
+      <CalendarEventActions/>
+      <footer class="border-t border-gray-300 mt-5 py-2">
+        <button class="block w-full text-sm text-gray-500 text-center">
+          Voir plus
+        </button>
+      </footer>
     </div>
-    <div class="bg-white text-gray-800 p-4 flex items-baseline">
-      <button class="block w-full px-3 py-1 uppercase font-semibold rounded-sm text-sm text-blue-500 border border-blue-500">
-        Participer
-      </button>
-      <button class="block w-full px-3 py-1 uppercase font-semibold rounded-sm text-sm text-red-500">
-        AFK
-      </button>
-    </div>
-  </div>
+  </article>
 </template>
 
 <script>
+import CalendarEventHeader from '@/components/CalendarEventHeader'
+import CalendarEventActions from '@/components/CalendarEventActions'
+import CalendarEventParticipants from '@/components/CalendarEventParticipants'
+
 export default {
+  components: {
+    CalendarEventHeader,
+    CalendarEventActions,
+    CalendarEventParticipants
+  },
   props: {
 
   },
