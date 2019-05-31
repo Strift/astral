@@ -1,5 +1,8 @@
 <template>
-  <button :class="`px-3 py-1 uppercase font-semibold rounded-sm text-sm border ${colorClasses} inline-flex`">
+  <button
+    :class="`px-3 py-1 uppercase font-semibold rounded-sm text-sm border ${colorClasses} inline-flex`"
+    @click="$emit('click')"
+  >
     <img
       v-if="active"
       src="@/assets/icons/calendar-disable.png"
