@@ -27,8 +27,8 @@ export default {
   },
   computed: {
     colorClasses () {
-      if (this.active) return 'bg-green-500 border-green-500 text-white'
-      return 'text-green-500 border-green-500'
+      if (this.active) return 'bg-blue-500 border-blue-500 text-white'
+      return 'text-blue-500 border-blue-500'
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
-    <div class="text-white text-right mr-4">
-      <div class="font-semibold text-2xl">{{ day }}</div>
+    <div class="text-gray-800 text-right mr-4">
+      <div class="font-semibold text-3xl leading-tight">{{ day }}</div>
       <div>{{ month }}</div>
     </div>
     <div class="w-full">

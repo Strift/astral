@@ -1,8 +1,7 @@
 <template>
-  <div class="font-sans">
+  <div class="font-sans bg-gray-100">
     <CalendarHeader class="mb-12"/>
-    <div class="container mx-auto px-3">
-
+    <div class="container mx-auto px-3 pb-10">
       <CalendarDay
         :date="new Date()"
       >
@@ -23,7 +22,6 @@
           class="mb-6"
         />
       </CalendarDay>
-
     </div>
   </div>
 </template>

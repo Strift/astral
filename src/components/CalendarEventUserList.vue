@@ -10,7 +10,7 @@
         class="inline mr-2"
       />
       <img
-        :src="user.class | iconPath"
+        :src="user.class | classIconPath"
         class="inline-block h-4 mr-2"
       />
       {{ user.name }}
@@ -20,6 +20,8 @@
 
 <script>
 import CalendarEventPortrait from '@/components/CalendarEventPortrait'
+
+import { classIconPath } from '@/filters'
 
 export default {
   components: {
@@ -32,9 +34,7 @@ export default {
     }
   },
   filters: {
-    iconPath (className) {
-      return `/icons/${className.toLowerCase()}.png`
-    }
+    classIconPath
   }
 }
 </script>

@@ -5,7 +5,7 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600&display=swap');
 
 @tailwind base;
 
@@ -13,12 +13,6 @@
 
 html, body {
   @apply .h-full .m-0;
-}
-
-body {
-  /*background-image: url('https://wallpaperplay.com/walls/full/3/0/7/17345.jpg');*/
-  background-image: url('./assets/images/background.jpg');
-  @apply .bg-cover;
 }
 
 @import './assets/css/tooltip.css';

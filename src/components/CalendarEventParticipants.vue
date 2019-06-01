@@ -34,7 +34,7 @@
     <CalendarEventPortrait
       v-for="(user, index) in firstFive"
       :image-url="user.imageUrl"
-      :style="`left: ${(index)*1.4}rem; z-index: ${10-index}`"
+      :style="`left: ${(index)*1.4}rem; z-index: ${5-index}`"
       :key="index"
       class="border-2 border-white inline-block absolute"
     />
