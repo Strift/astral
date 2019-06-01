@@ -8,35 +8,35 @@
         <div class="font-semibold text-gray-500 mb-3">
           Tanks &bull; {{ tanks.length }}
         </div>
-        <CalendarEventCharacterList
-          :characters="tanks"
+        <CalendarEventUserList
+          :users="tanks"
         />
       </div>
       <div v-if="healerCount">
         <div class="font-semibold text-gray-500 mb-3">
           Healers &bull; {{ healers.length }}
         </div>
-        <CalendarEventCharacterList
-          :characters="healers"
+        <CalendarEventUserList
+          :users="healers"
         />
       </div>
       <div v-if="dpsCount">
         <div class="font-semibold text-gray-500 mb-3">
           DPS &bull; {{ dps.length }}
         </div>
-        <CalendarEventCharacterList
-          :characters="dps"
+        <CalendarEventUserList
+          :users="dps"
         />
       </div>
     </div>
   </div>
   <div v-else class="relative h-8 flex items-center">
     <CalendarEventPortrait
-      v-for="i in 5"
-      image-url="https://pbs.twimg.com/profile_images/1068880894851723264/ZVEW4vi__400x400.jpg"
+      v-for="(user, index) in firstFive"
+      :image-url="user.imageUrl"
+      :style="`left: ${(index)*1.4}rem; z-index: ${10-index}`"
+      :key="index"
       class="border-2 border-white inline-block absolute"
-      :style="`left: ${(i-1)*1.4}rem; z-index: ${10-i}`"
-      :key="i"
     />
     <div class="ml-auto text-gray-500 font-semibold" @click="$emit('expand')">
       {{ totalCount }} participants
@@ -46,12 +46,12 @@
 
 <script>
 import CalendarEventPortrait from '@/components/CalendarEventPortrait'
-import CalendarEventCharacterList from '@/components/CalendarEventCharacterList'
+import CalendarEventUserList from '@/components/CalendarEventUserList'
 
 export default {
   components: {
     CalendarEventPortrait,
-    CalendarEventCharacterList
+    CalendarEventUserList
   },
   props: {
     participants: {
@@ -64,14 +64,17 @@ export default {
     }
   },
   computed: {
+    firstFive () {
+      return this.participants.slice(0, 5)
+    },
     tanks () {
-      return this.participants.filter(character => character.role === 'tank')
+      return this.participants.filter(user => user.role.toLowerCase() === 'tank')
     },
     healers () {
-      return this.participants.filter(character => character.role === 'healer')
+      return this.participants.filter(user => user.role.toLowerCase() === 'healer')
     },
     dps () {
-      return this.participants.filter(character => character.role === 'dps')
+      return this.participants.filter(user => user.role.toLowerCase() === 'dps')
     },
     totalCount () {
       return this.participants.length
@@ -83,7 +86,7 @@ export default {
       return this.healers.length
     },
     dpsCount () {
-      return this.dps.count
+      return this.dps.length
     }
   }
 }

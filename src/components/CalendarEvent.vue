@@ -1,6 +1,10 @@
 <template>
   <article class="rounded overflow-hidden shadow">
-    <CalendarEventHeader/>
+    <CalendarEventHeader
+      :background-url="backgroundUrl"
+      :date="date"
+      :location="location"
+    />
     <div class="bg-white px-5 pt-5">
       <CalendarEventParticipants
         :participants="participants"
@@ -11,12 +15,12 @@
         <CalendarEventAcceptButton
           :active="isAccepted"
           class="w-1/2 mr-1"
-          @click="status = 'accepted'"
+          @click="$emit('accept')"
         />
         <CalendarEventDeclineButton
           :active="isDeclined"
           class="w-1/2 ml-1"
-          @click="status = 'declined'"
+          @click="$emit('decline')"
         />
       </div>
       <footer class="border-t border-gray-300 mt-5 py-2">
@@ -35,8 +39,6 @@ import CalendarEventParticipants from '@/components/CalendarEventParticipants'
 import CalendarEventAcceptButton from '@/components/CalendarEventAcceptButton'
 import CalendarEventDeclineButton from '@/components/CalendarEventDeclineButton'
 
-import participants from '@/assets/participants.json'
-
 export default {
   components: {
     CalendarEventHeader,
@@ -44,11 +46,31 @@ export default {
     CalendarEventAcceptButton,
     CalendarEventDeclineButton
   },
+  props: {
+    date: {
+      type: Date,
+      required: true
+    },
+    backgroundUrl: {
+      type: String,
+      required: true
+    },
+    location: {
+      type: String,
+      required: true
+    },
+    participants: {
+      type: Array,
+      required: true
+    },
+    status: {
+      required: true,
+      validator: status => ['accepted', 'declined', null].includes(status)
+    }
+  },
   data () {
     return {
-      status: null,
-      isExpanded: false,
-      participants
+      isExpanded: false
     }
   },
   computed: {

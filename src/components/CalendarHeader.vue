@@ -1,6 +1,6 @@
 <template>
   <header class="sticky top-0 shadow" style="background-color: rgba(0, 0, 0, 0.1)">
-    <div class="container mx-auto px-2">
+    <div class="container mx-auto px-3">
       <div class="flex items-center border-b  py-5">
         <h1 class="text-white text-xl">
           Astral <span class="font-thin">Calendrier</span>

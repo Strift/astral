@@ -17,18 +17,22 @@
 <script>
 export default {
   props: {
+    date: {
+      type: Date,
+      required: true
+    },
     backgroundUrl: {
       type: String,
-      default: 'https://wow.zamimg.com/uploads/screenshots/normal/281289-molten-core.jpg'
+      required: true
     },
     location: {
       type: String,
-      default: 'Molten Core'
+      required: true
     }
   },
-  data () {
-    return {
-      time: '20h45'
+  computed: {
+    time () {
+      return `${this.date.getHours()}h${this.date.getMinutes()}`
     }
   }
 }

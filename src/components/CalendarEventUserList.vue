@@ -1,19 +1,19 @@
 <template>
   <ul class="text-gray-700">
     <li
-      v-for="(character, index) in characters"
+      v-for="(user, index) in users"
       :key="index"
       class="flex items-center mb-3 relative"
     >
       <CalendarEventPortrait
-        image-url="https://pbs.twimg.com/profile_images/1068880894851723264/ZVEW4vi__400x400.jpg"
+        :image-url="user.imageUrl"
         class="inline mr-2"
       />
       <img
-        :src="character.class | iconPath"
+        :src="user.class | iconPath"
         class="inline-block h-4 mr-2"
       />
-      {{ character.name }}
+      {{ user.name }}
     </li>
   </ul>
 </template>
@@ -26,7 +26,7 @@ export default {
     CalendarEventPortrait
   },
   props: {
-    characters: {
+    users: {
       type: Array,
       required: true
     }
