@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Arthe",
+        "class": "Warrior",
+        "role": "tank"
+    },
+    {
+        "name": "Tilmalith",
+        "class": "Warrior",
+        "role": "tank"
+    },
+    {
+        "name": "Guilford",
+        "class": "Warrior",
+        "role": "tank"
+    },
+    {
+        "name": "Martelle",
+        "class": "Priest",
+        "role": "healer"
+    },
+    {
+        "name": "Linoua",
+        "class": "Paladin",
+        "role": "healer"
+    },
+    {
+        "name": "Martelle",
+        "class": "Priest",
+        "role": "healer"
+    },
+    {
+        "name": "Linoua",
+        "class": "Paladin",
+        "role": "healer"
+    },
+    {
+        "name": "Strift",
+        "class": "Rogue",
+        "role": "dps"
+    },
+    {
+        "name": "Whity",
+        "class": "Warlock",
+        "role": "dps"
+    }
+]

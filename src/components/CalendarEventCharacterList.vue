@@ -1,7 +1,8 @@
 <template>
   <ul class="text-gray-700">
     <li
-      v-for="i in 3"
+      v-for="(character, index) in characters"
+      :key="index"
       class="flex items-center mb-3 relative"
     >
       <CalendarEventPortrait
@@ -9,10 +10,10 @@
         class="inline mr-2"
       />
       <img
-        src="@/assets/icons/rogue.png"
+        :src="character.class | iconPath"
         class="inline-block h-4 mr-2"
       />
-      Strift
+      {{ character.name }}
     </li>
   </ul>
 </template>
@@ -23,6 +24,17 @@ import CalendarEventPortrait from '@/components/CalendarEventPortrait'
 export default {
   components: {
     CalendarEventPortrait
+  },
+  props: {
+    characters: {
+      type: Array,
+      required: true
+    }
+  },
+  filters: {
+    iconPath (className) {
+      return `/icons/${className.toLowerCase()}.png`
+    }
   }
 }
 </script>

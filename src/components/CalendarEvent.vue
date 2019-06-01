@@ -3,11 +3,11 @@
     <CalendarEventHeader/>
     <div class="bg-white px-5 pt-5">
       <CalendarEventParticipants
+        :participants="participants"
         :expand="isExpanded"
-        class="mb-5"
         @expand="isExpanded = true"
       />
-      <div class="flex">
+      <div class="flex mt-5">
         <CalendarEventAcceptButton
           :active="isAccepted"
           class="w-1/2 mr-1"
@@ -35,6 +35,8 @@ import CalendarEventParticipants from '@/components/CalendarEventParticipants'
 import CalendarEventAcceptButton from '@/components/CalendarEventAcceptButton'
 import CalendarEventDeclineButton from '@/components/CalendarEventDeclineButton'
 
+import participants from '@/assets/participants.json'
+
 export default {
   components: {
     CalendarEventHeader,
@@ -42,13 +44,11 @@ export default {
     CalendarEventAcceptButton,
     CalendarEventDeclineButton
   },
-  props: {
-
-  },
   data () {
     return {
       status: null,
-      isExpanded: false
+      isExpanded: false,
+      participants
     }
   },
   computed: {

@@ -1,27 +1,33 @@
 <template>
   <div v-if="expand">
     <div class="font-semibold uppercase text-gray-500 mb-3">
-      27 participants
+      {{ totalCount }} participants
     </div>
     <div class="overflow-y-scroll" style="max-height: 30vh">
-      <div class="font-semibold text-gray-500 mb-3">
-        Tanks &bull; 3
+      <div v-if="tankCount">
+        <div class="font-semibold text-gray-500 mb-3">
+          Tanks &bull; {{ tanks.length }}
+        </div>
+        <CalendarEventCharacterList
+          :characters="tanks"
+        />
       </div>
-      <CalendarEventMembersList
-        class="mb-5"
-      />
-      <div class="font-semibold text-gray-500 mb-3">
-        Healers &bull; 8
+      <div v-if="healerCount">
+        <div class="font-semibold text-gray-500 mb-3">
+          Healers &bull; {{ healers.length }}
+        </div>
+        <CalendarEventCharacterList
+          :characters="healers"
+        />
       </div>
-      <CalendarEventMembersList
-        class="mb-5"
-      />
-      <div class="font-semibold text-gray-500 mb-3">
-        DPS &bull; 14
+      <div v-if="dpsCount">
+        <div class="font-semibold text-gray-500 mb-3">
+          DPS &bull; {{ dps.length }}
+        </div>
+        <CalendarEventCharacterList
+          :characters="dps"
+        />
       </div>
-      <CalendarEventMembersList
-        class="mb-5"
-      />
     </div>
   </div>
   <div v-else class="relative h-8 flex items-center">
@@ -33,29 +39,51 @@
       :key="i"
     />
     <div class="ml-auto text-gray-500 font-semibold" @click="$emit('expand')">
-      21 participants
+      {{ totalCount }} participants
     </div>
   </div>
 </template>
 
 <script>
 import CalendarEventPortrait from '@/components/CalendarEventPortrait'
-import CalendarEventMembersList from '@/components/CalendarEventMembersList'
+import CalendarEventCharacterList from '@/components/CalendarEventCharacterList'
 
 export default {
   components: {
     CalendarEventPortrait,
-    CalendarEventMembersList
+    CalendarEventCharacterList
   },
   props: {
+    participants: {
+      type: Array,
+      required: true
+    },
     expand: {
       type: Boolean,
       required: true
     }
   },
-  data () {
-    return {
-
+  computed: {
+    tanks () {
+      return this.participants.filter(character => character.role === 'tank')
+    },
+    healers () {
+      return this.participants.filter(character => character.role === 'healer')
+    },
+    dps () {
+      return this.participants.filter(character => character.role === 'dps')
+    },
+    totalCount () {
+      return this.participants.length
+    },
+    tankCount () {
+      return this.tanks.length
+    },
+    healerCount () {
+      return this.healers.length
+    },
+    dpsCount () {
+      return this.dps.count
     }
   }
 }
