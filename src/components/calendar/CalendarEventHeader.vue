@@ -32,8 +32,8 @@ export default {
   },
   computed: {
     time () {
-      const hours = ("00" + this.date.getHours()).substr(-2,2)
-      const minutes = ("00" + this.date.getMinutes()).substr(-2,2)
+      const hours = ('00' + this.date.getHours()).substr(-2, 2)
+      const minutes = ('00' + this.date.getMinutes()).substr(-2, 2)
       return `${hours}h${minutes}`
     }
   }

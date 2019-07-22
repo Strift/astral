@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import CalendarEventPortrait from '@/components/CalendarEventPortrait'
+import CalendarEventPortrait from '@/components/calendar/CalendarEventPortrait'
 
 import { classIconPath } from '@/filters'
 

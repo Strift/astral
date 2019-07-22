@@ -45,8 +45,8 @@
 </template>
 
 <script>
-import CalendarEventPortrait from '@/components/CalendarEventPortrait'
-import CalendarEventUserList from '@/components/CalendarEventUserList'
+import CalendarEventPortrait from '@/components/calendar/CalendarEventPortrait'
+import CalendarEventUserList from '@/components/calendar/CalendarEventUserList'
 
 export default {
   components: {

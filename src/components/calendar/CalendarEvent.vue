@@ -34,10 +34,10 @@
 </template>
 
 <script>
-import CalendarEventHeader from '@/components/CalendarEventHeader'
-import CalendarEventParticipants from '@/components/CalendarEventParticipants'
-import CalendarEventAcceptButton from '@/components/CalendarEventAcceptButton'
-import CalendarEventDeclineButton from '@/components/CalendarEventDeclineButton'
+import CalendarEventHeader from '@/components/calendar/CalendarEventHeader'
+import CalendarEventParticipants from '@/components/calendar/CalendarEventParticipants'
+import CalendarEventAcceptButton from '@/components/calendar/CalendarEventAcceptButton'
+import CalendarEventDeclineButton from '@/components/calendar/CalendarEventDeclineButton'
 
 export default {
   components: {

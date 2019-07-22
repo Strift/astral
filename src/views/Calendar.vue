@@ -27,9 +27,9 @@
 </template>
 
 <script>
-import CalendarHeader from '@/components/CalendarHeader'
-import CalendarEvent from '@/components/CalendarEvent'
-import CalendarDay from '@/components/CalendarDay'
+import CalendarHeader from '@/components/calendar/CalendarHeader'
+import CalendarEvent from '@/components/calendar/CalendarEvent'
+import CalendarDay from '@/components/calendar/CalendarDay'
 
 import participants from '@/assets/participants.json'
 

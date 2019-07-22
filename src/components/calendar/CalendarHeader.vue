@@ -23,7 +23,7 @@ export default {
 
 <style type="text/css" scoped>
 .navbar {
-  background-image: url('../assets/images/background.jpg');
+  background-image: url('../../assets/images/background.jpg');
   @apply .bg-cover;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
 }
