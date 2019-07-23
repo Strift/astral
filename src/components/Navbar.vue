@@ -1,5 +1,5 @@
 <template>
-  <nav class="">
+  <nav>
     <ul class="flex text-white text-xl">
       <li class="flex">
         <NavLink to="/" :active="$route.path === '/'">Presentation</NavLink>

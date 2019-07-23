@@ -2,7 +2,7 @@
   <div>
     <BaseHeader/>
     <Landing/>
-    <div class="bg-black">
+    <div class="bg-black text-gray-200">
       <div class="container mx-auto">
         <Navbar/>
         <div class="mt-16 mb-16">
