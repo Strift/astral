@@ -1,8 +1,20 @@
 <template>
   <div id="app" class="h-full w-full">
-    <router-view/>
+    <Layout>
+      <router-view/>
+    </Layout>
   </div>
 </template>
+
+<script>
+import Layout from '@/components/Layout'
+
+export default {
+  components: {
+    Layout
+  }
+}
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
