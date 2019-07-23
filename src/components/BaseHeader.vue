@@ -3,21 +3,8 @@
     <div class="container mx-auto py-5">
       <div class="flex justify-between">
         <img src="@/assets/images/astral.png" style="width: 70px">
-        <BaseButton class="text-white">
-          Contact
-        </BaseButton>
-
+        <button class="text-white font-title text-lg">Contact</button>
       </div>
     </div>
   </header>
 </template>
-
-<script>
-import BaseButton from '@/components/BaseButton'
-
-export default {
-  components: {
-    BaseButton
-  }
-}
-</script>
