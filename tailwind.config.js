@@ -148,6 +148,9 @@ module.exports = {
       xl: '1280px'
     },
     fontFamily: {
+      title: [
+        'Market Deco'
+      ],
       sans: [
         'Raleway',
         '-apple-system',

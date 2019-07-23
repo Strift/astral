@@ -1,0 +1,32 @@
+<template>
+  <div class="h-screen overflow-hidden relative">
+    <div class="absolute z-10 h-full w-full">
+      <div class="flex h-full">
+        <div class="mx-auto my-auto text-white text-center">
+          <h1 class="font-title">
+            Astral
+          </h1>
+          <h2 class="uppercase font-semibold mb-24">
+            Guilde WoW Classic - Serveur PvP
+          </h2>
+        </div>
+      </div>
+    </div>
+    <video autoplay muted loop id="myVideo" class="absolute z-0 bottom-0">
+      <source src="/background.mov" type="video/mp4">
+    </video>
+  </div>
+</template>
+
+<script>
+</script>
+
+<style type="text/css" scoped>
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 20px;
+}
+</style>

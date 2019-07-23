@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import AccountButton from '@/components/AccountButton'
+import AccountButton from '@/components/calendar/AccountButton'
 
 export default {
   components: {

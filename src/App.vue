@@ -5,7 +5,12 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+
+@font-face {
+  font-family: "Market Deco";
+  src: url("./assets/fonts/Market_Deco.ttf");
+ }
 
 @tailwind base;
 
