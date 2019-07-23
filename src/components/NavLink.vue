@@ -2,7 +2,7 @@
   <router-link
     :to="to"
     :class="[activeClass]"
-    class="font-title"
+    class="pb-8 font-title px-6"
   >
     <slot name="default"/>
   </router-link>
@@ -22,7 +22,7 @@ export default {
   },
   computed: {
     activeClass () {
-      if (this.active === true) return 'text-white'
+      if (this.active === true) return 'text-white border-b-4 border-primary'
       else if (this.active === false) return 'text-gray-600'
       return null
     }

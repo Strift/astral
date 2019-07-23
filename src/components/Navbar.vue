@@ -1,14 +1,14 @@
 <template>
-  <nav class="pb-8 border-b border-gray-600">
+  <nav class="">
     <ul class="flex text-white text-xl">
-      <li>
-        <NavLink to="/" :active="true">Presentation</NavLink>
+      <li class="flex">
+        <NavLink to="/" :active="$route.path === '/'">Presentation</NavLink>
       </li>
-      <li class="ml-24">
-        <NavLink to="/progress" :active="false">Progress</NavLink>
+      <li class="flex ml-5">
+        <NavLink to="/progress" :active="$route.path === '/progress'">Progress</NavLink>
       </li>
-      <li class="ml-24">
-        <NavLink to="/recrutement" :active="false" class="flex">
+      <li class="flex ml-5">
+        <NavLink to="/recrutement" :active="$route.path === '/recrutement'" class="flex">
           Recrutement
           <span class="bg-green-500 h-3 w-3 rounded-full ml-2 my-auto"></span>
         </NavLink>
@@ -26,3 +26,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+nav {
+  box-shadow: 0px -2px 0px #4a5568 inset;
+}
+</style>
