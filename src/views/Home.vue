@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <img src="@/assets/images/alliance.png" class="h-64">
-    <div class="text-white ml-20 text-lg">
+    <div class="text-white ml-20 text-lg my-auto">
       <p class="pb-4">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

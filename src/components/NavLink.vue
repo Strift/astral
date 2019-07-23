@@ -1,16 +1,20 @@
 <template>
-  <a
-    :href="'#'"
+  <router-link
+    :to="to"
     :class="[activeClass]"
     class="font-title"
   >
     <slot name="default"/>
-  </a>
+  </router-link>
 </template>
 
 <script>
 export default {
   props: {
+    to: {
+      type: String,
+      required: true
+    },
     active: {
       type: Boolean,
       default: null
