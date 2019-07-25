@@ -22,7 +22,6 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "tailwindcss": "^1.0.1",
-    "v-tooltip": "^2.0.2",
     "vue-template-compiler": "^2.5.21"
   }
 }
