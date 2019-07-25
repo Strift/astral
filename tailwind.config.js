@@ -7,8 +7,8 @@ module.exports = {
       },
       fontFamily: {
         title: ['Market Deco'],
-        sans: ['Raleway'],
-      },
+        sans: ['Raleway']
+      }
     }
   },
   variants: {}
