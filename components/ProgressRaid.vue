@@ -6,7 +6,6 @@
         :src="imagePath"
         :alt="imageAlt"
         :class="{ 'grayscale': cleared || !released }"
-        class=""
       >
     </div>
     <div class="bg-gray-900 p-5 rounded-b-lg">
