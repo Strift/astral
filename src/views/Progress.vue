@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-sans">
     <p class="text-white ml-20 text-lg">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

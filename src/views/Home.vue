@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex font-sans">
     <img src="@/assets/images/alliance.png" class="h-64">
     <div class="ml-20 text-lg my-auto">
       <h3 class="pb-4 font-semibold">👋 Qui sommes-nous ?</h3>
