@@ -1,6 +1,14 @@
 <template>
   <div>
-    <img :src="imagePath" :alt="imageAlt" class="rounded-t-lg">
+    <div class="relative rounded-t-lg overflow-hidden">
+      <div v-if="cleared" class="z-10 bg-primary absolute h-full w-full" style="mix-blend-mode: multiply" />
+      <img
+        :src="imagePath"
+        :alt="imageAlt"
+        :class="{ 'grayscale': cleared || !released }"
+        class=""
+      >
+    </div>
     <div class="bg-gray-900 p-5 rounded-b-lg">
       <h4 class="text-white font-title text-lg mb-5">
         {{ name }}
@@ -40,17 +48,27 @@ export default {
       required: true
     }
   },
+  data() {
+    return {
+      find: null
+    }
+  },
   computed: {
     imagePath() {
       return `/images/raids/${this.imageUrl}`
     },
     imageAlt() {
       return `${this.name} raid`
+    },
+    cleared() {
+      return this.bosses.find(boss => boss.status !== 'down') == null
     }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.grayscale {
+  filter: grayscale(100%);
+}
 </style>
