@@ -1,0 +1,32 @@
+<template>
+  <div class="h-full w-full">
+    <BaseHeader />
+    <Landing />
+    <div class="bg-black text-gray-200">
+      <div class="container mx-auto">
+        <Navbar />
+        <div class="mt-16 mb-16">
+          <nuxt />
+        </div>
+      </div>
+      <footer class="container mx-auto text-center text-white mt-24 pb-10">
+        &copy; 2019 Astral
+      </footer>
+    </div>
+  </div>
+</template>
+
+<script>
+import BaseHeader from '~/components/BaseHeader'
+import Landing from '~/components/Landing'
+import Navbar from '~/components/Navbar'
+
+export default {
+  name: 'Home',
+  components: {
+    BaseHeader,
+    Landing,
+    Navbar
+  }
+}
+</script>

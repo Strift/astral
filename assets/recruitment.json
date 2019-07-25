@@ -1,0 +1,34 @@
+[
+  {
+    "className": "Druid",
+    "open": true
+  },
+  {
+    "className": "Hunter",
+    "open": false
+  },
+  {
+    "className": "Mage",
+    "open": true
+  },
+  {
+    "className": "Paladin",
+    "open": true
+  },
+  {
+    "className": "Priest",
+    "open": true
+  },
+  {
+    "className": "Rogue",
+    "open": false
+  },
+  {
+    "className": "Warrior",
+    "open": true
+  },
+  {
+    "className": "Warlock",
+    "open": true
+  }
+]
