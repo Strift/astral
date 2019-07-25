@@ -6,9 +6,9 @@
           <h1 class="font-title">
             Astral
           </h1>
-          <h2 class="uppercase font-semibold mb-24 font-sans">
+          <p class="uppercase font-semibold mb-24 font-sans">
             Guilde WoW Classic - Serveur PvP
-          </h2>
+          </p>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@ h1 {
   font-size: 100px;
 }
 
-h2 {
+p {
   font-size: 20px;
 }
 </style>

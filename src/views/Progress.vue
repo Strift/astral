@@ -1,24 +1,29 @@
 <template>
-  <div class="font-sans">
-    <p class="text-white ml-20 text-lg">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+  <div class="flex justify-between font-sans">
+    <ProgressRaid
+      v-for="raid in raidProgress"
+      :name="raid.name"
+      :image-url="raid.imageUrl"
+      :released="raid.released"
+      :bosses="raid.bosses"
+      :key="raid.name"
+      class=""
+    />
   </div>
 </template>
 
 <script>
-export default {
-  props: {
+import ProgressRaid from '@/components/ProgressRaid'
 
+import raidProgress from '@/assets/progress.json'
+
+export default {
+  components: {
+    ProgressRaid
   },
   data () {
     return {
-
+      raidProgress
     }
   }
 }
