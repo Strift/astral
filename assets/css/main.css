@@ -1,9 +1,8 @@
 @font-face {
   font-family: 'Market Deco';
+  font-display: auto;
   src: url('~assets/fonts/Market_Deco.ttf');
 }
-
-
 
 @tailwind base;
 
