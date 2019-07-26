@@ -1,32 +1,44 @@
 <template>
   <nav>
-    <ul class="flex text-white text-xl">
-      <li class="flex">
-        <NavLink to="/" :active="$route.path === '/'">
-          Presentation
-        </NavLink>
-      </li>
-      <li class="flex ml-5">
-        <NavLink to="/progress" :active="$route.path === '/progress'">
-          Progress
-        </NavLink>
-      </li>
-      <li class="flex ml-5">
-        <NavLink to="/recruitment" :active="$route.path === '/recruitment'" class="flex">
-          Recrutement
-          <span class="bg-green-500 h-3 w-3 rounded-full ml-2 my-auto" />
-        </NavLink>
+    <ul class="flex text-white font-title text-xl">
+      <li
+        v-for="button in buttons"
+        :key="button.section"
+        :class="{ 'text-white border-b-4 border-primary': button.active, 'text-gray-600': !button.active }"
+        class="inline-block pb-8 px-6"
+      >
+        <button
+          :class="{ flex: button.alert }"
+          @click="$emit('nav', button.section)"
+        >
+          {{ button.text }}
+          <span
+            v-if="button.alert"
+            class="bg-green-500 h-3 w-3 rounded-full ml-2 my-auto"
+          />
+        </button>
       </li>
     </ul>
   </nav>
 </template>
 
 <script>
-import NavLink from '@/components/NavLink'
+import { validateNavButtonArray } from '~/lib/validators'
 
 export default {
   components: {
-    NavLink
+  },
+  props: {
+    buttons: {
+      type: Array,
+      required: true,
+      validator: validateNavButtonArray
+    }
+  },
+  methods: {
+    onClick (e) {
+      console.log(e)
+    }
   }
 }
 </script>

@@ -1,7 +1,11 @@
 <template>
   <div>
     <div class="relative rounded-t-lg overflow-hidden">
-      <div v-if="cleared" class="z-10 bg-primary absolute h-full w-full" style="mix-blend-mode: multiply" />
+      <div
+        v-if="cleared"
+        class="z-10 bg-primary absolute h-full w-full"
+        style="mix-blend-mode: multiply"
+      />
       <img
         :src="imagePath"
         :alt="imageAlt"
@@ -22,7 +26,7 @@
 <script>
 import ProgressRaidBossList from '~/components/ProgressRaidBossList'
 
-import { validateBossesArray } from '~/lib/validators'
+import { validateBossArray } from '~/lib/validators'
 
 export default {
   components: {
@@ -43,23 +47,23 @@ export default {
     },
     bosses: {
       type: Array,
-      validate: validateBossesArray,
+      validate: validateBossArray,
       required: true
     }
   },
-  data() {
+  data () {
     return {
       find: null
     }
   },
   computed: {
-    imagePath() {
+    imagePath () {
       return `/images/raids/${this.imageUrl}`
     },
-    imageAlt() {
+    imageAlt () {
       return `${this.name} raid`
     },
-    cleared() {
+    cleared () {
       return this.bosses.find(boss => boss.status !== 'down') == null
     }
   }

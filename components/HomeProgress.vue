@@ -21,7 +21,7 @@ export default {
   components: {
     ProgressRaid
   },
-  data() {
+  data () {
     return {
       raidProgress
     }

@@ -12,8 +12,17 @@
         </div>
       </div>
     </div>
-    <video id="myVideo" autoplay muted loop class="absolute z-0 bottom-0">
-      <source src="/background.mov" type="video/mp4">
+    <video
+      id="myVideo"
+      autoplay
+      muted
+      loop
+      class="absolute z-0 bottom-0"
+    >
+      <source
+        src="/background.mov"
+        type="video/mp4"
+      >
     </video>
   </div>
 </template>

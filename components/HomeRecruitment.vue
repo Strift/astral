@@ -43,7 +43,7 @@ export default {
   components: {
     RecruitmentCard
   },
-  data() {
+  data () {
     return {
       recruitmentStatus
     }

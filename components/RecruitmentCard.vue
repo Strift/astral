@@ -5,7 +5,10 @@
       :alt="`${className} class icon`"
       class="my-auto h-10"
     >
-    <div class="ml-10 my-auto text-lg font-semibold" :class="statusClass">
+    <div
+      class="ml-10 my-auto text-lg font-semibold"
+      :class="statusClass"
+    >
       {{ status }}
     </div>
   </div>
@@ -14,7 +17,7 @@
 <script>
 export default {
   filters: {
-    classIconPath(className) {
+    classIconPath (className) {
       return `/images/class-icon-${className.toLowerCase()}.png`
     }
   },
@@ -29,10 +32,10 @@ export default {
     }
   },
   computed: {
-    status() {
+    status () {
       return this.open ? 'Ouvert' : 'Fermé'
     },
-    statusClass() {
+    statusClass () {
       return this.open ? 'text-green-500' : 'text-gray-700'
     }
   }
