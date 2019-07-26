@@ -3,6 +3,7 @@
     <div class="flex justify-between">
       <img
         src="~/assets/images/astral.png"
+        alt="Logo Astral"
         style="width: 70px"
       >
       <button class="text-white font-title text-xl">
