@@ -2,6 +2,7 @@
   <div class="flex font-sans">
     <img
       src="@/assets/images/alliance.png"
+      alt="Logo de l'Alliance"
       class="h-64"
     >
     <div class="ml-20 text-lg my-auto">

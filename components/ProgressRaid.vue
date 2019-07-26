@@ -61,7 +61,7 @@ export default {
       return `/images/raids/${this.imageUrl}`
     },
     imageAlt () {
-      return `${this.name} raid`
+      return `${this.name}`
     },
     cleared () {
       return this.bosses.find(boss => boss.status !== 'down') == null

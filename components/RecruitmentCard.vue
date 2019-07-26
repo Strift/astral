@@ -1,8 +1,8 @@
 <template>
   <div class="flex bg-gray-900 px-4 font-sans rounded">
     <img
-      :src="className | classIconPath"
-      :alt="`${className} class icon`"
+      :src="iconPath"
+      :alt="`Icone de classe ${className}`"
       class="my-auto h-10"
     >
     <div
@@ -16,13 +16,12 @@
 
 <script>
 export default {
-  filters: {
-    classIconPath (className) {
-      return `/images/class-icon-${className.toLowerCase()}.png`
-    }
-  },
   props: {
     className: {
+      type: String,
+      required: true
+    },
+    iconPath: {
       type: String,
       required: true
     },

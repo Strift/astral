@@ -29,6 +29,7 @@
         v-for="recruitment in recruitmentStatus"
         :key="recruitment.name"
         :class-name="recruitment.className"
+        :icon-path="recruitment.iconPath"
         :open="recruitment.open"
       />
     </div>
