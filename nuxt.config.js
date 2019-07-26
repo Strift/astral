@@ -35,7 +35,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    'nuxt-purgecss'
   ],
   /*
   ** Build configuration
@@ -51,5 +52,8 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  purgeCSS: {
+    mode: 'postcss'
   }
 }
