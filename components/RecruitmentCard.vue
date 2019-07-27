@@ -6,7 +6,7 @@
       class="my-auto h-10"
     >
     <div
-      class="ml-10 my-auto text-lg font-semibold"
+      class="ml-12 my-auto text-lg font-semibold"
       :class="statusClass"
     >
       {{ status }}
