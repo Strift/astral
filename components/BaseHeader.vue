@@ -1,10 +1,10 @@
 <template>
-  <header class="fixed z-20 w-full py-5 px-10">
+  <header class="fixed z-20 w-full py-10 px-10">
     <div class="flex justify-between">
       <img
-        src="~/assets/images/astral.png"
+        src="~/assets/images/astral.svg"
         alt="Logo Astral"
-        style="width: 70px"
+        class="h-24"
       >
       <button class="text-white font-title text-xl">
         Contact
