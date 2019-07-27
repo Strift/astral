@@ -39,7 +39,7 @@ export default {
     textColorClass (boss) {
       if (this.isDown(boss)) return 'text-primary'
       else if (boss.status === 'progress') return 'text-white'
-      return 'text-gray-500'
+      return 'text-gray-light'
     }
   }
 }
@@ -47,6 +47,6 @@ export default {
 
 <style scoped>
 li:not(:last-child) {
-  @apply .border-b .border-gray-700;
+  @apply .border-b .border-gray-light;
 }
 </style>

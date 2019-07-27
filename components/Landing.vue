@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen overflow-hidden relative">
-    <div class="absolute z-10 h-full w-full">
+    <div class="absolute h-full w-full">
       <div class="flex h-full">
         <div class="mx-auto my-auto text-white text-center">
           <h1 class="font-title tracking-wider">
@@ -17,7 +17,8 @@
       autoplay
       muted
       loop
-      class="absolute z-0 bottom-0"
+      class="absolute bottom-0"
+      style="z-index: -1"
     >
       <source
         src="/background.mov"

@@ -1,10 +1,21 @@
 // See default config https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 module.exports = {
   theme: {
-    extend: {
-      colors: {
-        primary: '#5CFFED'
+    colors: {
+      primary: '#5CFFED',
+      white: '#FFFFFF',
+      black: '#000000',
+      gray: {
+        dark: '#23272A',
+        default: '#585858',
+        light: '#818181',
+        lightest: '#edf2f7'
       },
+      green: {
+        default: '#48bb78'
+      }
+    },
+    extend: {
       fontFamily: {
         title: ['Market Deco'],
         sans: ['Raleway']

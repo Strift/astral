@@ -1,7 +1,7 @@
 <template>
   <div>
     <Landing />
-    <div class="bg-black text-gray-200">
+    <div class="bg-black text-gray-lightest">
       <div class="container mx-auto">
         <Navbar
           :buttons="sections"

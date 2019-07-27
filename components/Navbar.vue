@@ -4,7 +4,7 @@
       <li
         v-for="button in buttons"
         :key="button.section"
-        :class="{ 'text-white border-b-4 border-primary': button.active, 'text-gray-600': !button.active }"
+        :class="{ 'text-white border-b-4 border-primary': button.active, 'text-gray-light': !button.active }"
         class="inline-block pb-8 px-6"
       >
         <button
@@ -14,7 +14,7 @@
           {{ button.text }}
           <span
             v-if="button.alert"
-            class="bg-green-500 h-3 w-3 rounded-full ml-2 my-auto"
+            class="bg-green h-3 w-3 rounded-full ml-2 my-auto"
           />
         </button>
       </li>

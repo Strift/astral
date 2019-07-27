@@ -1,6 +1,6 @@
 <template>
-  <header class="fixed z-20 w-full py-10 px-10">
-    <div class="flex justify-between">
+  <header class="fixed z-10 w-full py-10 px-10">
+    <div class="flex justify-between items-start">
       <img
         src="~/assets/images/astral.svg"
         alt="Logo Astral"
