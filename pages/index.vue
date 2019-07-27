@@ -40,7 +40,7 @@ export default {
       sections: [
         { text: 'Presentation', section: 'about', active: true },
         { text: 'Progress', section: 'progress', active: false },
-        { text: 'Recruitment', section: 'recruitment', active: false, alert: true }
+        { text: 'Recrutement', section: 'recruitment', active: false, alert: true }
       ]
     }
   },

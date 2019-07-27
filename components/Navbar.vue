@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <ul class="flex text-white font-title text-xl tracking-wider">
+    <ul class="flex text-white text-xl">
       <li
         v-for="button in buttons"
         :key="button.section"
@@ -9,6 +9,7 @@
       >
         <button
           :class="{ flex: button.alert }"
+          class="font-title tracking-wider"
           @click="$emit('nav', button.section)"
         >
           {{ button.text }}

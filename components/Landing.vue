@@ -6,7 +6,7 @@
           <h1 class="font-title tracking-wider">
             Astral
           </h1>
-          <p class="uppercase font-semibold mb-24 font-sans">
+          <p class="uppercase font-semibold mb-24 font-sans tracking-wider">
             Guilde WoW Classic - Serveur PvP
           </p>
         </div>
