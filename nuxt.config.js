@@ -15,7 +15,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Astral est une guilde WoW Classic à ambition PvE HL évoluant sur un serveur PvP' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/favicon32.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap' }
     ]
   },
