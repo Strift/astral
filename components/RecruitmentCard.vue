@@ -35,7 +35,7 @@ export default {
       return this.open ? 'Ouvert' : 'Fermé'
     },
     statusClass () {
-      return this.open ? 'text-green-500' : 'text-gray-700'
+      return this.open ? 'text-green-light' : 'text-gray-light'
     }
   }
 }

@@ -12,7 +12,8 @@ module.exports = {
         lightest: '#edf2f7'
       },
       green: {
-        default: '#48bb78'
+        default: '#48bb78',
+        light: '#84FF89'
       }
     },
     extend: {
