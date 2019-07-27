@@ -13,7 +13,7 @@
       >
     </div>
     <div class="bg-gray-900 p-5 rounded-b-lg">
-      <h4 class="text-white font-title text-lg mb-5">
+      <h4 class="text-white font-title text-lg tracking-wider mb-5">
         {{ name }}
       </h4>
       <ProgressRaidBossList

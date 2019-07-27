@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <ul class="flex text-white font-title text-xl">
+    <ul class="flex text-white font-title text-xl tracking-wider">
       <li
         v-for="button in buttons"
         :key="button.section"

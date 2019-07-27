@@ -20,7 +20,7 @@
           </li>
         </ul>
       </div>
-      <button class="bg-primary py-4 px-10 rounded my-auto text-black font-title ml-20 mr-20 text-lg">
+      <button class="bg-primary py-4 px-10 rounded my-auto text-black font-title tracking-wider ml-20 mr-20 text-lg">
         Postuler
       </button>
     </div>
