@@ -14,6 +14,7 @@
     </div>
     <video
       src="/background.mov"
+      poster="~assets/images/bg-poster.png"
       autoplay
       muted
       loop
