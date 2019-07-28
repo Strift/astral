@@ -13,18 +13,13 @@
       </div>
     </div>
     <video
-      id="myVideo"
+      src="/background.mov"
       autoplay
       muted
       loop
       class="absolute bottom-0"
       style="z-index: -1"
-    >
-      <source
-        src="/background.mov"
-        type="video/mp4"
-      >
-    </video>
+    />
   </div>
 </template>
 
