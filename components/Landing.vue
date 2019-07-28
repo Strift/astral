@@ -3,7 +3,7 @@
     <div class="absolute h-full w-full">
       <div class="flex h-full">
         <div class="mx-auto my-auto text-white text-center">
-          <h1 class="font-title tracking-wider">
+          <h1 class="font-title tracking-widest">
             Astral
           </h1>
           <p class="uppercase font-semibold mb-24 font-sans tracking-wider">

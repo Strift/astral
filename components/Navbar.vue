@@ -9,7 +9,7 @@
       >
         <button
           :class="{ flex: button.alert }"
-          class="font-title tracking-wider"
+          class="font-title tracking-widest"
           @click="$emit('nav', button.section)"
         >
           {{ button.text }}
