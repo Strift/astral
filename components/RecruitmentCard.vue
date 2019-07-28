@@ -1,5 +1,5 @@
 <template>
-  <div class="flex bg-gray-dark px-4 font-sans rounded">
+  <div class="flex bg-gray-darker px-4 font-sans rounded">
     <img
       :src="iconPath"
       :alt="`Icone de classe ${className}`"

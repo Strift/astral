@@ -12,7 +12,7 @@
         :class="{ 'grayscale': cleared || !released }"
       >
     </div>
-    <div class="bg-gray-dark p-5 rounded-b-lg">
+    <div class="bg-gray-darker p-5 rounded-b-lg">
       <h4 class="text-white font-title text-lg tracking-wider mb-5">
         {{ name }}
       </h4>

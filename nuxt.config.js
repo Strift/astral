@@ -16,7 +16,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon32.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,600|Catamaran:600&display=swap' }
     ]
   },
   /*
@@ -27,7 +27,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '~assets/css/main.css'
+    '~assets/css/main.css',
+    '~assets/css/tooltip.css'
   ],
   /*
   ** Plugins to load before mounting the App

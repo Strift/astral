@@ -6,7 +6,8 @@ module.exports = {
       white: '#FFFFFF',
       black: '#000000',
       gray: {
-        dark: '#23272A',
+        darker: '#23272A',
+        dark: '#C4C4C4',
         default: '#585858',
         light: '#818181',
         lightest: '#edf2f7'
@@ -14,12 +15,21 @@ module.exports = {
       green: {
         default: '#48bb78',
         light: '#84FF89'
+      },
+      discord: {
+        primary: '#7289DA'
       }
     },
     extend: {
       fontFamily: {
         title: ['Market Deco'],
-        sans: ['Raleway']
+        sans: ['Raleway'],
+        discord: ['Catamaran']
+      },
+      spacing: {
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
       }
     }
   },
