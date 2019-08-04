@@ -7,27 +7,27 @@
   {
     "className": "Démoniste",
     "iconPath": "/images/class-icon-warlock.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Druide",
     "iconPath": "/images/class-icon-druid.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Guerrier",
     "iconPath": "/images/class-icon-warrior.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Mage",
     "iconPath": "/images/class-icon-mage.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Paladin",
     "iconPath": "/images/class-icon-paladin.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Pretre",
@@ -37,6 +37,6 @@
   {
     "className": "Voleur",
     "iconPath": "/images/class-icon-rogue.png",
-    "open": false
+    "open": true
   }
 ]

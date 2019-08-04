@@ -6,78 +6,78 @@
     "bosses": [
       {
         "name": "Lucifron",
-        "status": "down"
+        "status": "progress"
       },
       {
         "name": "Magmadar",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Gehennas",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Gar",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Shazzrah",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Baron Geddon",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Sulfuron Harbinger",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Golemmag",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Majordomo Executus",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Ragnaros",
-        "status": "down"
+        "status": null
       }
-    ] 
+    ]
   },
   {
     "name": "Blackwing Lair",
     "imageUrl": "nefarian.jpg",
-    "released": true,
+    "released": false,
     "bosses": [
       {
         "name": "Razorgore",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Vaelstrasz",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Lashlayer",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Firemaw",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Ebonroc",
-        "status": "down"
+        "status": null
       },
       {
         "name": "Flamegor",
-        "status": "progress"
+        "status": null
       },
       {
         "name": "Chromaggus",
-        "status": "null"
+        "status": null
       },
       {
         "name": "Nefarian",
