@@ -6,7 +6,7 @@
         alt="Logo Astral"
         class="h-16 lg:h-24"
       >
-      <ContactButton/>
+      <ContactButton />
     </div>
   </header>
 </template>

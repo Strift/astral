@@ -2,7 +2,7 @@
   <!-- No SSR: Necessary cause popover generate span tag which breaks client hydration  -->
   <no-ssr>
     <v-popover
-      popover-class="w-96 mr-8 shadow-md"
+      popover-class="w-72 sm:w-96 mr-3 sm:mr-8 shadow-md"
     >
       <button class="text-white font-title text-xl tracking-widest inline">
         Contact
@@ -19,9 +19,11 @@
           <img
             src="~assets/images/discord-logo-white.svg"
             alt="Logo Discord"
-            class="h-8"
+            class="h-6"
           >
-          <span class="text-xl text-white font-discord ml-12">Rejoindre notre Discord</span>
+          <span class="text-xl text-white font-discord mx-auto">
+            Rejoindre le serveur
+          </span>
         </a>
       </template>
     </v-popover>
