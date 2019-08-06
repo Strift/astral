@@ -32,6 +32,7 @@
         :icon-path="recruitment.iconPath"
         :open="recruitment.open"
         :class="{ 'hidden sm:flex': !recruitment.open }"
+        class="h-16 mb-10"
       />
     </div>
   </div>
@@ -54,13 +55,6 @@ export default {
 </script>
 
 <style scoped>
-.classes {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
-  grid-row-gap: 2.5rem;
-}
-
 @media (min-width: 640px) {
   .classes {
     display: grid;
