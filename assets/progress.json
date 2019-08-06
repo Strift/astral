@@ -1,7 +1,7 @@
 [
   {
     "name": "Molten Core",
-    "imageUrl": "ragnaros.jpg",
+    "imageUrl": "molten-core.jpg",
     "released": true,
     "bosses": [
       {
@@ -48,7 +48,7 @@
   },
   {
     "name": "Blackwing Lair",
-    "imageUrl": "nefarian.jpg",
+    "imageUrl": "blackwing-lair.jpg",
     "released": false,
     "bosses": [
       {
@@ -87,7 +87,7 @@
   },
   {
     "name": "Temple of Ahn'Qiraj",
-    "imageUrl": "cthun.jpg",
+    "imageUrl": "aq40.jpg",
     "released": false,
     "bosses": [
       {
@@ -130,7 +130,7 @@
   },
   {
     "name": "Naxxramas",
-    "imageUrl": "kelthuzad.jpg",
+    "imageUrl": "naxxramas.jpg",
     "released": false,
     "bosses": [
       {
