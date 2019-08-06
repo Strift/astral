@@ -13,7 +13,7 @@
       </div>
     </div>
     <video
-      src="/background.mov"
+      src="/astral-bg-web.mp4"
       autoplay
       muted
       loop
