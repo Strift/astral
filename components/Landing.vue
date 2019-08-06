@@ -13,7 +13,7 @@
       </div>
     </div>
     <video
-      src="/astral-bg-web.mp4"
+      src="https://firebasestorage.googleapis.com/v0/b/astral-6e63b.appspot.com/o/astral-bg.mov?alt=media&token=1af54505-31b1-4333-93c3-f56dac9b7bea"
       autoplay
       muted
       loop
