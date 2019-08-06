@@ -20,7 +20,7 @@
       autoplay
       muted
       loop
-      class="absolute bottom-0 hidden lg:block"
+      class="absolute bottom-0 hidden xl:block"
       style="z-index: -1"
     />
   </div>

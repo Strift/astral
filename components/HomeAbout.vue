@@ -1,18 +1,18 @@
 <template>
-  <div class="flex font-sans">
+  <div class="md:flex px-6 xl:px-0 font-sans">
     <img
       src="@/assets/images/alliance.png"
       alt="Logo de l'Alliance"
-      class="h-64"
+      class="h-64 mx-auto"
     >
-    <div class="ml-20 text-lg my-auto">
-      <h3 class="pb-4 font-semibold">
+    <div class="mt-12 md:mt-0 md:ml-10 text-lg my-auto">
+      <h3 class="mb-4 font-semibold">
         👋 Qui sommes-nous ?
       </h3>
-      <p class="pb-4">
+      <p class="mb-4">
         Astral est une <strong class="font-semibold">guilde PvE</strong> initialement formée par quatre amis jouant ensemble depuis <span class="italic">The Burning Crusade</span>, ayant ensuite été rejoints par des amis IRL et des copains de leur serveur de l'époque (Varimathras-EU &lt;3). Aujourd’hui, la guilde est une communauté forte d’une <strong class="font-semibold">cinquantaine de joueurs expérimentés</strong> du PvE sur retail ou Vanilla.
       </p>
-      <h3 class="pb-4 font-semibold">
+      <h3 class="mt-8 mb-4 font-semibold">
         👪 Que pouvons nous t'apporter ?
       </h3>
       <ul class="list-disc">

@@ -1,5 +1,5 @@
 <template>
-  <header class="absolute z-10 w-full p-6 lg:p-10">
+  <header class="absolute z-10 w-full p-6 xl:p-10">
     <div class="flex justify-between items-start">
       <img
         src="~/assets/images/astral.svg"
