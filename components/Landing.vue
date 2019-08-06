@@ -2,12 +2,15 @@
   <div class="h-screen overflow-hidden relative bg-video z-0">
     <div class="absolute h-full w-full">
       <div class="flex h-full">
-        <div class="mx-auto my-auto text-white text-center">
-          <h1 class="font-title tracking-widest">
+        <div class="mx-auto my-auto text-white text-center px-6">
+          <h1 class="font-title text-7xl lg:text-hero tracking-widest">
             Astral
           </h1>
           <p class="uppercase font-semibold mb-24 font-sans tracking-widest">
-            Guilde WoW Classic - Serveur PvP
+            Guilde WoW Classic
+            <span class="hidden md:inline"> -</span>
+            <br class="inline md:hidden">
+            Serveur PvP
           </p>
         </div>
       </div>
@@ -30,10 +33,6 @@ export default {
 </script>
 
 <style type="text/css" scoped>
-h1 {
-  font-size: 100px;
-}
-
 p {
   font-size: 20px;
 }

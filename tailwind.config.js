@@ -26,6 +26,10 @@ module.exports = {
         sans: ['Raleway'],
         discord: ['Catamaran']
       },
+      fontSize: {
+        hero: '100px',
+        '7xl': '5rem'
+      },
       spacing: {
         72: '18rem',
         84: '21rem',

@@ -1,11 +1,11 @@
 <template>
   <nav>
-    <ul class="flex text-white text-xl">
+    <ul class="flex flex-wrap text-white text-xl">
       <li
         v-for="button in buttons"
         :key="button.section"
         :class="{ 'text-white border-b-4 border-primary': button.active, 'text-gray-light': !button.active }"
-        class="inline-block pb-8 px-6"
+        class="inline-flex pb-8 px-6"
       >
         <button
           :class="{ flex: button.alert }"
