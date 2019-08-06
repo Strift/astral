@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen overflow-hidden relative">
+  <div class="h-screen overflow-hidden relative bg-video z-0">
     <div class="absolute h-full w-full">
       <div class="flex h-full">
         <div class="mx-auto my-auto text-white text-center">
@@ -14,11 +14,10 @@
     </div>
     <video
       src="/background.mov"
-      poster="~assets/images/bg-poster.png"
       autoplay
       muted
       loop
-      class="absolute bottom-0"
+      class="absolute bottom-0 hidden lg:block"
       style="z-index: -1"
     />
   </div>
@@ -37,5 +36,10 @@ h1 {
 
 p {
   font-size: 20px;
+}
+
+.bg-video {
+  background-image: url(~assets/images/background.jpg);
+  background-position: bottom;
 }
 </style>
