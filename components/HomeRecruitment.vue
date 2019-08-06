@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div class="flex mb-12 font-sans">
-      <div class="text-lg">
+  <div class=" px-6">
+    <div class="flex flex-wrap mb-12 font-sans">
+      <div class="text-lg lg:w-2/3">
         <h3 class="pb-4 font-semibold">
           🧙‍♂️ Que recherchons-nous ?
         </h3>
@@ -20,7 +20,7 @@
           </li>
         </ul>
       </div>
-      <button class="bg-primary py-4 px-10 rounded my-auto text-black font-title tracking-wider ml-20 mr-20 text-lg">
+      <button class="bg-primary py-4 px-10 rounded my-auto text-black font-title tracking-wider mx-auto mt-12 text-lg">
         Postuler
       </button>
     </div>
@@ -31,6 +31,7 @@
         :class-name="recruitment.className"
         :icon-path="recruitment.iconPath"
         :open="recruitment.open"
+        :class="{ 'hidden sm:flex': !recruitment.open }"
       />
     </div>
   </div>
@@ -55,9 +56,28 @@ export default {
 <style scoped>
 .classes {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 4rem 4rem;
-  grid-column-gap: 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
   grid-row-gap: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .classes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4rem 4rem 4rem 4rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .classes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4rem 4rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2.5rem;
+  }
 }
 </style>
