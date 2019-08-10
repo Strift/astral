@@ -42,6 +42,7 @@ export default {
     ['@nuxtjs/google-analytics', {
       id: 'UA-99085502-3'
     }],
+    '@nuxtjs/robots',
     '@nuxtjs/eslint-module',
     'nuxt-purgecss'
   ],
