@@ -12,7 +12,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Astral est une guilde WoW Classic à ambition PvE HL évoluant sur un serveur PvP' }
+      { hid: 'description', name: 'description', content: 'Astral est une guilde PVE HL sur le serveur WoW Classic Sulfuron (JcJ)' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon32.png' },

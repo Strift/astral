@@ -7,10 +7,10 @@
             Astral
           </h1>
           <p class="uppercase font-semibold mb-24 font-sans tracking-widest">
-            Guilde WoW Classic
+            Guilde Semi-Hardcore
             <span class="hidden md:inline"> -</span>
             <br class="inline md:hidden">
-            Serveur PvP
+            Sulfuron (JCJ)
           </p>
         </div>
       </div>

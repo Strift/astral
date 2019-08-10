@@ -17,7 +17,7 @@
   {
     "className": "Guerrier",
     "iconPath": "/images/class-icon-warrior.png",
-    "open": false
+    "open": true
   },
   {
     "className": "Mage",
