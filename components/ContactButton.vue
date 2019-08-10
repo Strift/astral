@@ -3,12 +3,9 @@
   <no-ssr>
     <v-popover
       popover-class="w-72 sm:w-96 mr-3 sm:mr-8 shadow-md"
-      :open.sync="isOpen"
     >
       <button
         class="text-white font-title text-xl tracking-widest inline"
-        aria-haspopup="true"
-        :aria-expanded="expanded"
       >
         Contact
       </button>
@@ -41,16 +38,6 @@ import { VPopover } from 'v-tooltip'
 export default {
   components: {
     VPopover
-  },
-  data () {
-    return {
-      isOpen: false
-    }
-  },
-  computed: {
-    expanded () {
-      return String(this.isOpen)
-    }
   }
 }
 </script>
