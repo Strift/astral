@@ -4,11 +4,7 @@
     <v-popover
       popover-class="w-72 sm:w-96 mr-3 sm:mr-8 shadow-md"
     >
-      <button
-        class="text-white font-title text-xl tracking-widest inline"
-      >
-        Contact
-      </button>
+      <BaseButton>Contact</BaseButton>
       <template slot="popover">
         <p class="text-white mb-4">
           Hey 👋<br>Le meilleur moyen de nous contacter c’est de venir faire coucou sur notre Discord. Sois pas timide !
@@ -34,10 +30,12 @@
 
 <script>
 import { VPopover } from 'v-tooltip'
+import BaseButton from '~/components/BaseButton'
 
 export default {
   components: {
-    VPopover
+    VPopover,
+    BaseButton
   }
 }
 </script>

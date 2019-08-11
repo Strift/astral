@@ -1,12 +1,18 @@
 <template>
-  <div class="h-screen overflow-hidden relative bg-video z-0">
-    <div class="absolute h-full w-full">
-      <div class="flex h-full">
-        <div class="mx-auto my-auto text-white text-center px-6">
+  <div class="h-screen overflow-hidden relative bg-bottom bg-video z-0">
+    <div class="layout absolute h-full w-full text-white">
+      <div
+        class="h-full text-center flex"
+        style="grid-row: 2"
+      >
+        <div class="m-auto">
           <h1 class="font-title text-7xl lg:text-hero tracking-widest">
             Astral
           </h1>
-          <p class="uppercase font-semibold mb-24 font-sans tracking-widest">
+          <p
+            class="uppercase font-semibold mb-16 font-sans tracking-widest"
+            style="font-size: 20px;"
+          >
             Guilde Semi-Hardcore
             <span class="hidden md:inline"> -</span>
             <br class="inline md:hidden">
@@ -14,6 +20,11 @@
           </p>
         </div>
       </div>
+      <!-- <div class="flex h-full" style="grid-row: 3">
+        <p class="floatting bg-green px-4 py-1 rounded-full m-auto">
+          Recrutement ouvert
+        </p>
+      </div> -->
     </div>
     <video
       src="https://firebasestorage.googleapis.com/v0/b/astral-6e63b.appspot.com/o/astral-bg.mov?alt=media&token=1af54505-31b1-4333-93c3-f56dac9b7bea"
@@ -33,12 +44,32 @@ export default {
 </script>
 
 <style type="text/css" scoped>
-p {
-  font-size: 20px;
-}
-
 .bg-video {
   background-image: url(~assets/images/background.jpg);
-  background-position: bottom;
+}
+
+.layout {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 20% 60% 20%;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-0.5rem);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.floatting {
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
 }
 </style>
