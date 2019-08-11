@@ -11,6 +11,7 @@
         </p>
         <a
           href="https://discord.gg/PJqzaGb"
+          title="Rejoindre le serveur Discord"
           target="_blank"
           class="bg-discord-primary flex items-center rounded py-3 px-3 shadow-md hover:shadow-lg"
         >

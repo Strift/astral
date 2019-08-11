@@ -20,9 +20,14 @@
           </li>
         </ul>
       </div>
-      <button class="bg-primary py-4 px-10 rounded my-auto text-black font-title tracking-wider mx-auto mt-12 text-lg">
+      <a
+        href="https://www.guilded.gg/r/EnrRpynBxl?i=8mRxEkz4"
+        title="Postuler via Guilded"
+        target="_blank"
+        class="bg-primary py-4 px-10 rounded my-auto text-black font-title tracking-wider mx-auto mt-12 text-lg"
+      >
         Postuler
-      </button>
+      </a>
     </div>
     <div class="classes">
       <RecruitmentCard

@@ -17,7 +17,7 @@
   {
     "className": "Guerrier",
     "iconPath": "/images/class-icon-warrior.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Mage",
@@ -32,11 +32,11 @@
   {
     "className": "Pretre",
     "iconPath": "/images/class-icon-priest.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Voleur",
     "iconPath": "/images/class-icon-rogue.png",
-    "open": true
+    "open": false
   }
 ]
