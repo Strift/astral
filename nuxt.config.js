@@ -42,6 +42,11 @@ export default {
     ['@nuxtjs/google-analytics', {
       id: 'UA-99085502-3'
     }],
+    ['@nuxtjs/google-tag-manager', {
+      id: 'GTM-XXXXXXX',
+      pageTracking: true,
+      dev: false
+    }],
     '@nuxtjs/robots',
     '@nuxtjs/eslint-module',
     'nuxt-purgecss'
