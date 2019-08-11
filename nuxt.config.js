@@ -43,7 +43,7 @@ export default {
       id: 'UA-99085502-3'
     }],
     ['@nuxtjs/google-tag-manager', {
-      id: 'GTM-XXXXXXX',
+      id: 'GTM-KCNFK7R',
       pageTracking: true,
       dev: false
     }],
