@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Landing />
+    <Hero />
     <div class="bg-black text-gray-lightest">
       <div class="container mx-auto">
         <Navbar
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Landing from '~/components/Landing'
+import Hero from '~/components/Hero'
 import Navbar from '~/components/Navbar'
 import HomeAbout from '~/components/HomeAbout'
 import HomeProgress from '~/components/HomeProgress'
@@ -29,7 +29,7 @@ import HomeRecruitment from '~/components/HomeRecruitment'
 
 export default {
   components: {
-    Landing,
+    Hero,
     Navbar,
     HomeAbout,
     HomeProgress,
