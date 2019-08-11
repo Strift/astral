@@ -1,44 +1,31 @@
 <template>
   <nav>
     <ul class="flex flex-wrap text-white text-xl">
-      <li
+      <NavItem
         v-for="section in sections"
-        :key="section.section"
-        :class="{ 'text-white border-b-4 border-primary': section.active, 'text-gray-light': !section.active }"
-        class="inline-flex pb-8 px-6"
+        :url="section.url"
+        :alert="section.alert ? true : false"
+        :key="section.text"
       >
-        <nuxt-link
-          :to="section.url"
-          :class="{ flex: section.alert }"
-          class="font-title tracking-widest"
-        >
-          {{ section.text }}
-          <span
-            v-if="section.alert"
-            class="bg-green h-3 w-3 rounded-full ml-2 my-auto"
-          />
-        </nuxt-link>
-      </li>
+        {{ section.text }}
+      </NavItem>
     </ul>
   </nav>
 </template>
 
 <script>
+import NavItem from '~/components/NavItem'
 import { validateNavSectionArray } from '~/lib/validators'
 
 export default {
   components: {
+    NavItem
   },
   props: {
     sections: {
       type: Array,
       required: true,
       validator: validateNavSectionArray
-    }
-  },
-  methods: {
-    onClick (e) {
-      console.log(e)
     }
   }
 }
