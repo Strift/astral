@@ -37,12 +37,6 @@
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style type="text/css" scoped>
 .bg-video {
   background-image: url(~assets/images/background.jpg);
