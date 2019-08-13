@@ -10,7 +10,7 @@
           Hey 👋<br>Le meilleur moyen de nous contacter c’est de venir faire coucou sur notre Discord. Sois pas timide !
         </p>
         <a
-          href="https://discord.gg/PJqzaGb"
+          href="https://discord.gg/sNtEjyy"
           title="Rejoindre le serveur Discord"
           target="_blank"
           class="bg-discord-primary flex items-center rounded py-3 px-3 shadow-md hover:shadow-lg"
