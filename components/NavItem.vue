@@ -31,7 +31,7 @@ export default {
   },
   computed: {
     isActive () {
-      return this.url === this.$route.path
+      return this.$route.path === this.url || this.$route.path === `${this.url}/`
     }
   }
 }
