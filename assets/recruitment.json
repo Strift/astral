@@ -7,7 +7,7 @@
   {
     "className": "Démoniste",
     "iconPath": "/images/class-icon-warlock.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Druide",
@@ -37,6 +37,6 @@
   {
     "className": "Voleur",
     "iconPath": "/images/class-icon-rogue.png",
-    "open": true
+    "open": false
   }
 ]
