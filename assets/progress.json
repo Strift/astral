@@ -6,39 +6,39 @@
     "bosses": [
       {
         "name": "Lucifron",
-        "status": "progress"
+        "status": "down"
       },
       {
         "name": "Magmadar",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Gehennas",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Gar",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Shazzrah",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Baron Geddon",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Sulfuron Harbinger",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Golemmag",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Majordomo Executus",
-        "status": null
+        "status": "progress"
       },
       {
         "name": "Ragnaros",

@@ -2,7 +2,7 @@
   {
     "className": "Chasseur",
     "iconPath": "/images/class-icon-hunter.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Démoniste",
@@ -27,7 +27,7 @@
   {
     "className": "Paladin",
     "iconPath": "/images/class-icon-paladin.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Pretre",
