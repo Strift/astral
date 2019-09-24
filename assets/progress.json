@@ -38,11 +38,11 @@
       },
       {
         "name": "Majordomo Executus",
-        "status": "progress"
+        "status": "down"
       },
       {
         "name": "Ragnaros",
-        "status": null
+        "status": "down"
       }
     ]
   },
