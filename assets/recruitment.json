@@ -7,7 +7,7 @@
   {
     "className": "Démoniste",
     "iconPath": "/images/class-icon-warlock.png",
-    "open": false
+    "open": true
   },
   {
     "className": "Druide",
@@ -32,7 +32,7 @@
   {
     "className": "Pretre",
     "iconPath": "/images/class-icon-priest.png",
-    "open": false
+    "open": true
   },
   {
     "className": "Voleur",
