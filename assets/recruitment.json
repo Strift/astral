@@ -17,12 +17,12 @@
   {
     "className": "Guerrier",
     "iconPath": "/images/class-icon-warrior.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Mage",
     "iconPath": "/images/class-icon-mage.png",
-    "open": false
+    "open": true
   },
   {
     "className": "Paladin",
