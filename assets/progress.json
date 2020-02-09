@@ -49,18 +49,18 @@
   {
     "name": "Blackwing Lair",
     "imageUrl": "blackwing-lair.jpg",
-    "released": false,
+    "released": true,
     "bosses": [
       {
-        "name": "Razorgore",
+        "name": "Razorgore the Untamed",
+        "status": "progress"
+      },
+      {
+        "name": "Vaelastrasz the Corrupt",
         "status": null
       },
       {
-        "name": "Vaelstrasz",
-        "status": null
-      },
-      {
-        "name": "Lashlayer",
+        "name": "Broodlord Lashlayer",
         "status": null
       },
       {
@@ -91,19 +91,7 @@
     "released": false,
     "bosses": [
       {
-        "name": "Skeram",
-        "status": null
-      },
-      {
-        "name": "Sartura",
-        "status": null
-      },
-      {
-        "name": "Fankriss",
-        "status": null
-      },
-      {
-        "name": "Huhuran",
+        "name": "The Prophet Skeram",
         "status": null
       },
       {
@@ -111,7 +99,19 @@
         "status": null
       },
       {
+        "name": "Battleguard Sartura",
+        "status": null
+      },
+      {
+        "name": "Fankriss the Unyielding",
+        "status": null
+      },
+      {
         "name": "Viscidus",
+        "status": null
+      },
+      {
+        "name": "Princess Huhuran",
         "status": null
       },
       {
@@ -119,11 +119,11 @@
         "status": null
       },
       {
-        "name": "Ouro",
+        "name": "Ouro the Sandworm",
         "status": null
       },
       {
-        "name": "C'thun",
+        "name": "C'Thun",
         "status": null
       }
     ]
@@ -138,7 +138,7 @@
         "status": null
       },
       {
-        "name": "Faerlina",
+        "name": "Grand Widow Faerlina",
         "status": null
       },
       {
@@ -146,11 +146,11 @@
         "status": null
       },
       {
-        "name": "Noth",
+        "name": "Noth the Plaguebringer",
         "status": null
       },
       {
-        "name": "Heigan",
+        "name": "Heigan the Unclean",
         "status": null
       },
       {
@@ -158,11 +158,11 @@
         "status": null
       },
       {
-        "name": "Razuvious",
+        "name": "Instructor Razuvious",
         "status": null
       },
       {
-        "name": "Gothik",
+        "name": "Gothik the Harvester",
         "status": null
       },
       {
