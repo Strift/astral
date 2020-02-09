@@ -7,12 +7,12 @@
   {
     "className": "Démoniste",
     "iconPath": "/images/class-icon-warlock.png",
-    "open": true
+    "open": false
   },
   {
     "className": "Druide",
     "iconPath": "/images/class-icon-druid.png",
-    "open": false
+    "open": true
   },
   {
     "className": "Guerrier",
