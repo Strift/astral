@@ -53,35 +53,35 @@
     "bosses": [
       {
         "name": "Razorgore the Untamed",
-        "status": "progress"
+        "status": "down"
       },
       {
         "name": "Vaelastrasz the Corrupt",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Broodlord Lashlayer",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Firemaw",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Ebonroc",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Flamegor",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Chromaggus",
-        "status": null
+        "status": "down"
       },
       {
         "name": "Nefarian",
-        "status": null
+        "status": "down"
       }
     ]
   },
