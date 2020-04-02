@@ -1,6 +1,6 @@
 <template>
   <!-- No SSR: Necessary cause popover generate span tag which breaks client hydration  -->
-  <no-ssr>
+  <client-only>
     <v-popover
       popover-class="w-72 sm:w-96 mr-3 sm:mr-8 shadow-md"
     >
@@ -26,7 +26,7 @@
         </a>
       </template>
     </v-popover>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>

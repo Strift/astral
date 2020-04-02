@@ -3,6 +3,7 @@
     "name": "Molten Core",
     "imageUrl": "molten-core.jpg",
     "released": true,
+    "index": 0,
     "bosses": [
       {
         "name": "Lucifron",
@@ -50,6 +51,7 @@
     "name": "Blackwing Lair",
     "imageUrl": "blackwing-lair.jpg",
     "released": true,
+    "index": 1,
     "bosses": [
       {
         "name": "Razorgore the Untamed",
@@ -89,6 +91,7 @@
     "name": "Temple of Ahn'Qiraj",
     "imageUrl": "aq40.jpg",
     "released": false,
+    "index": 2,
     "bosses": [
       {
         "name": "The Prophet Skeram",
@@ -132,6 +135,7 @@
     "name": "Naxxramas",
     "imageUrl": "naxxramas.jpg",
     "released": false,
+    "index": 3,
     "bosses": [
       {
         "name": "Anub'Rekhan",
