@@ -21,8 +21,6 @@ import db from '~/lib/database'
 
 import ProgressRaid from '~/components/ProgressRaid'
 
-// import raidProgress from '~/assets/progress.json'
-
 export default {
   components: {
     ProgressRaid

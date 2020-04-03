@@ -1,3 +1,4 @@
+import database from './lib/database'
 
 export default {
   mode: 'universal',
@@ -67,6 +68,19 @@ export default {
     extend (config, ctx) {
     }
   },
+  /*
+  ** Generate configuration
+  */
+  hooks: {
+    generate: {
+      done(builder) {
+        database.terminate()
+      }
+    }
+  },
+  /*
+  ** PurgeCSS configuration
+  */
   purgeCSS: {
     mode: 'postcss'
   }
