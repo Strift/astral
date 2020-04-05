@@ -13,18 +13,24 @@
             class="uppercase font-semibold mb-16 font-sans tracking-widest"
             style="font-size: 20px;"
           >
-            Guilde Semi-Hardcore
+            Guilde PvE HL
             <span class="hidden md:inline"> -</span>
             <br class="inline md:hidden">
             Sulfuron (JCJ)
           </p>
         </div>
       </div>
-      <!-- <div class="flex h-full" style="grid-row: 3">
-        <p class="floatting bg-green px-4 py-1 rounded-full m-auto">
+      <div
+        class="flex h-full"
+        style="grid-row: 3"
+      >
+        <client-only>
+          <ScrollDownIcon />
+        </client-only>
+        <!-- <p class="floatting bg-green px-4 py-1 rounded-full m-auto">
           Recrutement ouvert
-        </p>
-      </div> -->
+        </p> -->
+      </div>
     </div>
     <video
       src="https://firebasestorage.googleapis.com/v0/b/astral-6e63b.appspot.com/o/astral-bg.mov?alt=media&token=1af54505-31b1-4333-93c3-f56dac9b7bea"
@@ -37,6 +43,16 @@
   </div>
 </template>
 
+<script>
+import ScrollDownIcon from '~/components/ui/ScrollDownIcon'
+
+export default {
+  components: {
+    ScrollDownIcon
+  }
+}
+</script>
+
 <style type="text/css" scoped>
 .bg-video {
   background-image: url(~assets/images/background.jpg);
@@ -48,22 +64,5 @@ grid-template-columns: 1fr;
 grid-template-rows: 20% 60% 20%;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
-}
-
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-0.5rem);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-.floatting {
-  transform: translatey(0px);
-  animation: float 2s ease-in-out infinite;
 }
 </style>

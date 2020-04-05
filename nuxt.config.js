@@ -35,6 +35,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/compositionApi',
     '~/plugins/firestore'
   ],
   /*
@@ -73,7 +74,7 @@ export default {
   */
   hooks: {
     generate: {
-      done(builder) {
+      done (builder) {
         database.terminate()
       }
     }
