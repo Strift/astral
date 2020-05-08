@@ -21,10 +21,6 @@ export default {
       type: String,
       required: true
     },
-    iconPath: {
-      type: String,
-      required: true
-    },
     open: {
       type: Boolean,
       required: true
@@ -36,6 +32,9 @@ export default {
     },
     statusClass () {
       return this.open ? 'text-green-light' : 'text-gray-light'
+    },
+    iconPath () {
+      return `/images/class-icon-${this.className.toLowerCase()}.png`
     }
   }
 }

@@ -31,10 +31,9 @@
     </div>
     <div class="classes">
       <RecruitmentCard
-        v-for="recruitment in recruitmentStatus"
-        :key="recruitment.name"
-        :class-name="recruitment.className"
-        :icon-path="recruitment.iconPath"
+        v-for="recruitment in visibleRecruitmentStatus"
+        :key="recruitment.class"
+        :class-name="recruitment.class"
         :open="recruitment.open"
         :class="{ 'hidden sm:flex': !recruitment.open }"
         class="h-16 mb-10"
@@ -44,7 +43,8 @@
 </template>
 
 <script>
-import recruitmentStatus from '~/assets/recruitment.json'
+import db from '~/lib/database'
+
 import RecruitmentCard from '~/components/RecruitmentCard.vue'
 
 export default {
@@ -57,7 +57,17 @@ export default {
 
   data () {
     return {
-      recruitmentStatus
+      recruitmentStatus: []
+    }
+  },
+
+  firestore: {
+    recruitmentStatus: db.collection('recruitment')
+  },
+
+  computed: {
+    visibleRecruitmentStatus () {
+      return this.recruitmentStatus.filter(r => !r.hidden)
     }
   }
 }

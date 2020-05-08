@@ -17,9 +17,11 @@
 </template>
 
 <script>
+import db from '~/lib/database'
+
 import ProgressRaid from '~/components/ProgressRaid'
 
-import raidProgress from '~/assets/progress.json'
+// import raidProgress from '~/assets/progress.json'
 
 export default {
   components: {
@@ -31,8 +33,12 @@ export default {
 
   data () {
     return {
-      raidProgress
+      raidProgress: []
     }
+  },
+
+  firestore: {
+    raidProgress: db.collection('progress')
   }
 }
 </script>
