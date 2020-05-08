@@ -3,7 +3,7 @@ module.exports = {
   purge: [
     './components/**/*.vue',
     './layouts/**/*.vue',
-    './page/**/*.vue',
+    './page/**/*.vue'
   ],
   theme: {
     colors: {
@@ -16,6 +16,10 @@ module.exports = {
         default: '#585858',
         light: '#818181',
         lightest: '#edf2f7'
+      },
+      blue: {
+        dark: '#0d182f',
+        light: '#8dacc7'
       },
       green: {
         default: '#48bb78',
