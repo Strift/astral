@@ -51,8 +51,7 @@ export default {
     //   dev: false
     // }],
     '@nuxtjs/robots',
-    '@nuxtjs/eslint-module',
-    'nuxt-purgecss'
+    '@nuxtjs/eslint-module'
   ],
   /*
   ** Build configuration
