@@ -3,7 +3,7 @@ module.exports = {
   purge: [
     './components/**/*.vue',
     './layouts/**/*.vue',
-    './page/**/*.vue'
+    './pages/**/*.vue'
   ],
   theme: {
     colors: {

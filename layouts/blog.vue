@@ -1,7 +1,7 @@
 <template>
   <BackgroundVideo class="flex flex-col">
     <BaseHeader :blog="true" />
-    <nuxt class="overflow-y-scroll mb-12" />
+    <nuxt class="overflow-y-auto mb-12" />
   </BackgroundVideo>
 </template>
 
