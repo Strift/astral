@@ -1,5 +1,5 @@
 <template>
-  <article class="w-full max-w-3xl mx-auto rounded-sm shadow-md p-8 bg-blue-dark bg-opacity-75 text-blue-light">
+  <article class="article w-full max-w-3xl mx-auto rounded-sm shadow-md p-8 bg-blue-dark bg-opacity-75 text-blue-light">
     <component :is="markdownComponent" />
   </article>
 </template>
@@ -23,12 +23,22 @@ export default {
 }
 </script>
 
-<style>
-h1 {
-  @apply text-primary font-title text-3xl tracking-widest mb-4;
-}
+<style lang="scss">
+.article {
+  h1 {
+    @apply text-primary font-title text-3xl tracking-widest mb-8;
+  }
 
-p {
-  @apply font-sans text-lg leading-10;
+  h2 {
+    @apply font-title text-xl text-gray-lightest tracking-wider mb-8;
+  }
+
+  p {
+    @apply font-sans text-lg leading-10;
+
+    &:not(:last-child) {
+      @apply mb-8;
+    }
+  }
 }
 </style>
