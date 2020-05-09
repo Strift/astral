@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 // See default config https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 module.exports = {
   purge: [
@@ -32,7 +34,7 @@ module.exports = {
     extend: {
       fontFamily: {
         title: ['Market Deco'],
-        sans: ['Raleway'],
+        sans: ['Raleway', ...defaultTheme.fontFamily.sans],
         discord: ['Catamaran']
       },
       fontSize: {

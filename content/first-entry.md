@@ -1,5 +1,10 @@
 ---
 date: 2020-05-09
+title: First entry in the blog!
+preview: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+author:
+  name: Strift
+  title: Maître de guilde
 ---
 
 # Hello!

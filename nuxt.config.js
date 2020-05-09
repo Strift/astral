@@ -1,7 +1,15 @@
+import fs from 'fs'
 import path from 'path'
 import Mode from 'frontmatter-markdown-loader/mode'
 
 import database from './lib/database'
+
+function getBlogPaths () {
+  return fs
+    .readdirSync(path.resolve(__dirname, 'content'))
+    .filter(filename => path.extname(filename) === '.md')
+    .map(filename => `/blog/${path.parse(filename).name}`)
+}
 
 export default {
   mode: 'universal',
@@ -20,7 +28,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon32.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,600|Catamaran:600&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Raleway:wght@400;600&display=swap' }
     ]
   },
   /*
@@ -90,9 +98,7 @@ export default {
   ** Generate configuration
   */
   generate: {
-    routes: [
-      '/blog/first-entry'
-    ]
+    routes: getBlogPaths()
   },
   hooks: {
     generate: {

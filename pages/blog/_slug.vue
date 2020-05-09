@@ -1,13 +1,21 @@
 <template>
-  <article class="article w-full max-w-3xl mx-auto rounded-sm shadow-md p-8 bg-blue-dark bg-opacity-75 text-blue-light">
-    <component :is="markdownComponent" />
-  </article>
+  <BaseCard class="w-full max-w-3xl mx-auto my-12">
+    <article class="article">
+      <component :is="markdownComponent" />
+    </article>
+  </BaseCard>
 </template>
 
 <script>
+import BaseCard from '~/components/ui/BaseCard'
+
 export default {
   name: 'Article',
   layout: 'blog',
+
+  components: {
+    BaseCard
+  },
 
   data: () => ({
     attrs: null,
