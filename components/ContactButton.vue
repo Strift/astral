@@ -31,7 +31,7 @@
 
 <script>
 import { VPopover } from 'v-tooltip'
-import BaseButton from '~/components/BaseButton'
+import BaseButton from '~/components/ui/BaseButton'
 
 export default {
   components: {

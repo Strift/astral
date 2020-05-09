@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import { watchEffect, computed } from '@vue/composition-api'
+import { computed } from '@vue/composition-api'
 
 import useScroll from '~/lib/composables/useScroll'
 
@@ -46,12 +46,8 @@ export default {
     const { scrollY } = useScroll()
 
     const opacity = computed(() => {
-      const value = scrollY.value > 500 ? 0 : 100 - scrollY.value / 5
+      const value = scrollY.value > 400 ? 0 : 100 - scrollY.value / 4
       return `${value}%`
-    })
-
-    watchEffect(() => {
-      console.log(opacity.value)
     })
 
     return {

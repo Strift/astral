@@ -23,7 +23,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '##5CFFED' },
+  loading: { color: '#5CFFED' },
   /*
   ** Global CSS
   */
@@ -39,19 +39,22 @@ export default {
     '~/plugins/firestore'
   ],
   /*
-  ** Nuxt.js modules
+  ** Nuxt.js dev-modules
   */
-  modules: [
+  buildModules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-99085502-3'
     }],
-    // ['@nuxtjs/google-tag-manager', {
-    //   id: 'GTM-KCNFK7R',
-    //   pageTracking: true,
-    //   dev: false
-    // }],
     '@nuxtjs/robots',
+    // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module'
+  ],
+  /*
+  ** Nuxt.js modules
+  */
+  modules: [
+    // Doc: https://github.com/nuxt-community/dotenv-module
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Build configuration
