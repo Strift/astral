@@ -1,5 +1,5 @@
 <template>
-  <BaseCard class="w-full max-w-3xl mx-auto my-12">
+  <BaseCard>
     <article class="article">
       <component :is="markdownComponent" />
     </article>

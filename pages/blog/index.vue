@@ -1,11 +1,14 @@
 <template>
-  <div class="w-full max-w-3xl mx-auto space-y-8 py-12">
+  <div class="space-y-8">
     <nuxt-link
       v-for="article in articles"
       :key="article.fileName"
       :to="article.fileName | permalink"
+      class="space-y-8"
     >
       <ArticleCard
+        v-for="i in 10"
+        :key="i"
         :title="article.attributes.title"
         :preview="article.attributes.preview"
         :author="article.attributes.author"
