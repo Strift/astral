@@ -1,21 +1,21 @@
 <template>
-  <div>
-    <h1
-      v-if="attrs"
-      class="font-title text-white text-4xl mb-4 border-primary border-b-4 pb-2"
-    >
+  <div v-if="attrs">
+    <h1 class="font-title text-white text-4xl mb-4 border-primary border-b-4 pb-2">
       {{ attrs.title }}
     </h1>
-    <div
-      v-if="attrs"
-      class="font-title text-blue-light mb-12"
-    >
+    <div class="font-title text-blue-light mb-12">
       {{ attrs.date | localeDate | capitalize }}
     </div>
-    <BaseCard>
+    <BaseCard class="mb-64">
       <article class="article">
         <component :is="markdownComponent" />
       </article>
+      <ArticleAuthor
+        :name="attrs.author.name"
+        :title="attrs.author.title"
+        :image-url="attrs.author.imageUrl"
+        class="mt-12 pt-12 border-t border-blue-light border-opacity-50"
+      />
     </BaseCard>
   </div>
 </template>
@@ -24,13 +24,15 @@
 import capitalize from '~/lib/filters/capitalize'
 import localeDate from '~/lib/filters/localeDate'
 import BaseCard from '~/components/ui/BaseCard'
+import ArticleAuthor from '~/components/blog/ArticleAuthor'
 
 export default {
   name: 'Article',
   layout: 'blog',
 
   components: {
-    BaseCard
+    BaseCard,
+    ArticleAuthor
   },
 
   data: () => ({
