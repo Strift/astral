@@ -4,11 +4,15 @@
       <div class="font-title text-xl tracking-wider text-white">
         {{ name }}
       </div>
-      <div v-if="title" class="text-lg">
+      <div
+        v-if="title"
+        class="text-lg"
+      >
         {{ title }}
       </div>
     </div>
-    <img v-if="imageUrl"
+    <img
+      v-if="imageUrl"
       :src="imageUrl"
       :alt="name"
       :title="imageTitle"
