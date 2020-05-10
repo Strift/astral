@@ -43,11 +43,15 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
     steps:
+      # Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v2
+      # Download build files
       - name: Download production artifact
+        uses: actions/download-artifact@master
         with:
           name: dist
+      # Deploy in dev environment
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
