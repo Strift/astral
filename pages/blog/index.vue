@@ -5,7 +5,7 @@
       :key="article.fileName"
       :to="article.fileName | permalink"
     >
-      <ArticleCard
+      <BlogCard
         :title="article.attributes.title"
         :preview="article.attributes.preview"
         :author="article.attributes.author"
@@ -17,13 +17,13 @@
 </template>
 
 <script>
-import ArticleCard from '~/components/blog/ArticleCard'
+import BlogCard from '~/components/blog/BlogCard'
 
 export default {
   layout: 'blog',
 
   components: {
-    ArticleCard
+    BlogCard
   },
 
   async asyncData () {

@@ -1,6 +1,6 @@
 <template>
-  <BaseCard class="float-on-hover hover:shadow-lg hover:bg-blue">
-    <div class="font-semibold text-white text-xl font-title tracking-wide mb-4">
+  <BaseCard class="float-on-hover hover:shadow-lg hover:bg-blue hover:bg-opacity-50">
+    <div class="text-white text-xl font-title tracking-wider mb-4">
       {{ title }}
     </div>
     <div class="mb-8">
