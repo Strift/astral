@@ -1,6 +1,9 @@
 <template>
   <div class="h-screen">
-    <PerfectScrollbar class="overflow-hidden h-screen" @ps-scroll-y="onScroll">
+    <PerfectScrollbar
+      class="overflow-hidden h-screen"
+      @ps-scroll-y="onScroll"
+    >
       <BackgroundVideo>
         <Navbar class="absolute z-10" />
         <LandingHero />
