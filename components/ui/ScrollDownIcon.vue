@@ -35,7 +35,7 @@
 </template>
 
 <script>
-const SCROLL_HEIGHT = 400
+const SCROLL_HEIGHT = 300
 
 export default {
   computed: {
