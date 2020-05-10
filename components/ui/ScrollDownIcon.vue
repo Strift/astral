@@ -35,23 +35,16 @@
 </template>
 
 <script>
-import { computed } from '@vue/composition-api'
-
-import useScroll from '~/lib/composables/useScroll'
-
-// const SCROLL_HEIGHT = 300
+const SCROLL_HEIGHT = 400
 
 export default {
-  setup () {
-    const { scrollY } = useScroll()
-
-    const opacity = computed(() => {
-      const value = scrollY.value > 400 ? 0 : 100 - scrollY.value / 4
-      return `${value}%`
-    })
-
-    return {
-      opacity
+  computed: {
+    opacity () {
+      const ratio = (SCROLL_HEIGHT - this.$store.state.scrollY) / SCROLL_HEIGHT
+      if (ratio < 0) {
+        return 0
+      }
+      return ratio
     }
   }
 }
