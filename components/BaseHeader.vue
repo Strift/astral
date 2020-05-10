@@ -19,7 +19,7 @@
       </div>
       <div class="ml-auto flex">
         <nuxt-link
-          v-if="!blog"
+          v-if="false && !blog"
           to="/blog"
           title="Blog"
         >
