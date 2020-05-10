@@ -39,6 +39,6 @@
 <script>
 export default {
   layout: 'landing',
-  scrollToTop: false
+  scrollToTop: true
 }
 </script>
