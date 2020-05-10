@@ -1,6 +1,6 @@
 <template>
-  <BaseCard class="card hover:shadow-lg">
-    <div class="font-semibold text-white text-lg mb-4">
+  <BaseCard class="float-on-hover hover:shadow-lg hover:bg-blue">
+    <div class="font-semibold text-white text-xl font-title tracking-wide mb-4">
       {{ title }}
     </div>
     <div class="mb-8">
@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import capitalize from '~/lib/filters/capitalize'
+import localeDate from '~/lib/filters/localeDate'
 import BaseCard from '~/components/ui/BaseCard'
 
 export default {
@@ -38,30 +40,8 @@ export default {
   },
 
   filters: {
-    localeDate (dateString) {
-      const date = new Date(dateString)
-      return date
-        .toLocaleDateString('fr-FR', {
-          weekday: 'long',
-          month: 'long',
-          day: 'numeric',
-          year: 'numeric'
-        })
-    },
-    capitalize (string) {
-      return string.charAt(0).toUpperCase() + string.slice(1)
-    }
+    capitalize,
+    localeDate
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.card {
-  transition: transform .3s cubic-bezier(.34,2,.6,1),
-              box-shadow .2s ease;
-
-  &:hover {
-    transform: translateY(-5px)
-  }
-}
-</style>

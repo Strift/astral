@@ -7,8 +7,6 @@ author:
   title: Maître de guilde
 ---
 
-# Hello!
-
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet nemo aliquid officiis tempora similique expedita laudantium excepturi, nostrum incidunt mollitia consequuntur enim, minus quo fuga eos dignissimos facere illum.
 
 ## Subtitle

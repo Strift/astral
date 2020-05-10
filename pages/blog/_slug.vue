@@ -1,12 +1,28 @@
 <template>
-  <BaseCard>
-    <article class="article">
-      <component :is="markdownComponent" />
-    </article>
-  </BaseCard>
+  <div>
+    <h1
+      v-if="attrs"
+      class="font-title text-white text-4xl mb-4 border-primary border-b-4 pb-2"
+    >
+      {{ attrs.title }}
+    </h1>
+    <div
+      v-if="attrs"
+      class="font-title text-blue-light mb-12"
+    >
+      {{ attrs.date | localeDate | capitalize }}
+    </div>
+    <BaseCard>
+      <article class="article">
+        <component :is="markdownComponent" />
+      </article>
+    </BaseCard>
+  </div>
 </template>
 
 <script>
+import capitalize from '~/lib/filters/capitalize'
+import localeDate from '~/lib/filters/localeDate'
 import BaseCard from '~/components/ui/BaseCard'
 
 export default {
@@ -21,6 +37,11 @@ export default {
     attrs: null,
     markdownComponent: null
   }),
+
+  filters: {
+    capitalize,
+    localeDate
+  },
 
   async created () {
     // String interpolation somehow breaks eslint

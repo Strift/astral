@@ -1,18 +1,16 @@
 <template>
-  <div class="space-y-8">
+  <div>
     <nuxt-link
-      v-for="article in articles"
+      v-for="(article, i) in sortedArticles"
       :key="article.fileName"
       :to="article.fileName | permalink"
-      class="space-y-8"
     >
       <ArticleCard
-        v-for="i in 10"
-        :key="i"
         :title="article.attributes.title"
         :preview="article.attributes.preview"
         :author="article.attributes.author"
         :date="article.attributes.date"
+        :class="{ 'mt-10': i > 0 }"
       />
     </nuxt-link>
   </div>
@@ -39,6 +37,12 @@ export default {
     })
     return {
       articles
+    }
+  },
+
+  computed: {
+    sortedArticles () {
+      return this.articles.concat().sort((articleA, articleB) => Date.parse(articleB.attributes.date) - Date.parse(articleA.attributes.date))
     }
   },
 
