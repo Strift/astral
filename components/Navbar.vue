@@ -20,6 +20,7 @@
       </nuxt-link>
       <div class="ml-auto flex">
         <nuxt-link
+          v-if="BLOG_RELEASED"
           to="/blog"
           title="Blog"
           active-class="border-b-2 pb-1"
@@ -46,11 +47,16 @@
 import { VPopover } from 'v-tooltip'
 import DiscordModal from '~/components/DiscordModal'
 
+const BLOG_RELEASED = process.env.NUXT_ENV_BLOG_RELEASED === 'true'
+
 export default {
   components: {
     VPopover,
     DiscordModal
   },
+  data: () => ({
+    BLOG_RELEASED
+  }),
   props: {
     blog: {
       type: Boolean,
