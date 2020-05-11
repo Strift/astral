@@ -27,8 +27,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Astral est une guilde PVE HL sur le serveur WoW Classic Sulfuron (JcJ)' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon32.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Raleway:wght@400;600&display=swap' }
+      { rel: 'icon', type: 'image/png', href: '/favicon32.png' }
     ]
   },
   /*

@@ -17,7 +17,7 @@
         alt="Logo Discord"
         class="h-6"
       >
-      <span class="text-xl text-white font-discord mx-auto">
+      <span class="text-xl text-white font-semibold font-discord mx-auto">
         Rejoindre le serveur
       </span>
     </a>

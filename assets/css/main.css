@@ -1,11 +1,54 @@
 /*
-* Base
+* Fonts
 */
 
+/* Market Deco */
 @font-face {
   font-family: 'Market Deco';
   font-display: auto;
   src: url('~assets/fonts/Market_Deco.ttf');
+}
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~assets/fonts/raleway-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'),
+       url('~assets/fonts/raleway-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('~assets/fonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('~assets/fonts/raleway-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('~assets/fonts/raleway-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('~assets/fonts/raleway-v14-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+/* raleway-600 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url('~assets/fonts/raleway-v14-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'),
+       url('~assets/fonts/raleway-v14-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('~assets/fonts/raleway-v14-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('~assets/fonts/raleway-v14-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('~assets/fonts/raleway-v14-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('~assets/fonts/raleway-v14-latin-600.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+/* catamaran-600 - latin */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 600;
+  src: url('~assets/fonts/catamaran-v6-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Catamaran SemiBold'), local('Catamaran-SemiBold'),
+       url('~assets/fonts/catamaran-v6-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('~assets/fonts/catamaran-v6-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('~assets/fonts/catamaran-v6-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('~assets/fonts/catamaran-v6-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('~assets/fonts/catamaran-v6-latin-600.svg#Catamaran') format('svg'); /* Legacy iOS */
 }
 
 /*
