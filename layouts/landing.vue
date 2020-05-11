@@ -1,35 +1,42 @@
 <template>
-  <div>
-    <BackgroundVideo>
-      <BaseHeader class="absolute z-10" />
-      <Hero />
-    </BackgroundVideo>
-    <div class="bg-black text-gray-lightest">
-      <div class="container mx-auto">
-        <LandingNav
-          :sections="sections"
-        />
-        <div class="mt-16 mb-16">
-          <nuxt />
+  <div class="h-screen">
+    <PerfectScrollbar
+      class="overflow-hidden h-screen"
+      @ps-scroll-y="onScroll"
+    >
+      <BackgroundVideo>
+        <Navbar class="absolute z-10" />
+        <LandingHero />
+      </BackgroundVideo>
+      <div class="bg-black text-gray-lightest">
+        <div class="container mx-auto">
+          <LandingNav
+            :sections="sections"
+          />
+          <div class="mt-16 mb-16">
+            <nuxt />
+          </div>
         </div>
+        <BaseFooter class="mt-12" />
       </div>
-      <BaseFooter class="mt-12" />
-    </div>
+    </PerfectScrollbar>
   </div>
 </template>
 
 <script>
-import Hero from '~/components/Hero'
+import { PerfectScrollbar } from 'vue2-perfect-scrollbar'
+import LandingHero from '~/components/LandingHero'
 import LandingNav from '~/components/LandingNav'
-import BaseHeader from '~/components/BaseHeader'
+import Navbar from '~/components/Navbar'
 import BaseFooter from '~/components/BaseFooter'
 import BackgroundVideo from '~/components/BackgroundVideo'
 
 export default {
   components: {
-    Hero,
+    PerfectScrollbar,
+    LandingHero,
     LandingNav,
-    BaseHeader,
+    Navbar,
     BaseFooter,
     BackgroundVideo
   },
@@ -40,6 +47,11 @@ export default {
         { text: 'Progress', url: '/progress' },
         { text: 'Recrutement', url: '/recrutement', alert: true }
       ]
+    }
+  },
+  methods: {
+    onScroll (event) {
+      this.$store.commit('setScrollY', event.target.scrollTop)
     }
   }
 }

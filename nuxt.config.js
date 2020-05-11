@@ -1,4 +1,15 @@
+import fs from 'fs'
+import path from 'path'
+import Mode from 'frontmatter-markdown-loader/mode'
+
 import database from './lib/database'
+
+function getBlogPaths () {
+  return fs
+    .readdirSync(path.resolve(__dirname, 'content'))
+    .filter(filename => path.extname(filename) === '.md')
+    .map(filename => `/blog/${path.parse(filename).name}`)
+}
 
 export default {
   mode: 'universal',
@@ -16,8 +27,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Astral est une guilde PVE HL sur le serveur WoW Classic Sulfuron (JcJ)' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon32.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,600|Catamaran:600&display=swap' }
+      { rel: 'icon', type: 'image/png', href: '/favicon32.png' }
     ]
   },
   /*
@@ -60,6 +70,9 @@ export default {
   ** Build configuration
   */
   build: {
+    /*
+    ** PostCSS configuration
+     */
     postcss: {
       plugins: {
         tailwindcss: './tailwind.config.js'
@@ -69,11 +82,36 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      // add frontmatter-markdown-loader
+      config.module.rules.push({
+        test: /\.md$/,
+        include: path.resolve(__dirname, 'content'),
+        loader: 'frontmatter-markdown-loader',
+        options: {
+          mode: [Mode.VUE_COMPONENT, Mode.META]
+        }
+      })
+    }
+  },
+  /*
+   * Render configuration
+   */
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        if (type === 'font') {
+          // only preload woff2 fonts
+          return /\.woff2$/.test(file)
+        }
+      }
     }
   },
   /*
   ** Generate configuration
   */
+  generate: {
+    routes: getBlogPaths()
+  },
   hooks: {
     generate: {
       done (builder) {
