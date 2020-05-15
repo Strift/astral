@@ -43,9 +43,10 @@ export default {
   }),
 
   head () {
+    if (this.attrs == null) return []
     return {
-      title: this.attrs && this.attrs.title + ' | Astral',
-      meta: this.attrs && [
+      title: this.attrs.title + ' | Astral',
+      meta: [
         { name: 'author', content: this.attrs.author.name },
         { name: 'description', content: this.attrs.preview, hid: 'description' },
         { property: 'og:title', content: this.attrs.title },
