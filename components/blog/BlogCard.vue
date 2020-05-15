@@ -1,7 +1,7 @@
 <template>
   <BaseCard class="float-on-hover hover:shadow-lg hover:bg-blue hover:bg-opacity-50">
     <div class="text-white text-xl font-title tracking-wider mb-4">
-      {{ title }}
+      {{ title | removeAccents }}
     </div>
     <div class="mb-8">
       {{ preview }}
@@ -25,6 +25,7 @@
 <script>
 import capitalize from '~/lib/filters/capitalize'
 import localeDate from '~/lib/filters/localeDate'
+import removeAccents from '~/lib/filters/removeAccents'
 import BaseCard from '~/components/ui/BaseCard'
 
 export default {
@@ -41,7 +42,8 @@ export default {
 
   filters: {
     capitalize,
-    localeDate
+    localeDate,
+    removeAccents
   }
 }
 </script>
