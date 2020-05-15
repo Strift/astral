@@ -1,6 +1,6 @@
 ---
 date: 2020-05-15
-title: Organiser ses raids avec raid-helper
+title: Organiser ses raids avec Raid-Helper
 preview: Nos conseils pour organiser au mieux vos raids grâce au bot Discord Raid-Helper.
 author:
   name: Strift
