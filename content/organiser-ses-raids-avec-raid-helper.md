@@ -42,7 +42,7 @@ Comme vous vous en doutez sûrement, cette commande permet en réalité de simul
 
 Une fois vos benchs réalisés, vous pouvez décider de clôturer les inscriptions à votre évènement en utilisant la commande `!endEvent ID`. Et toc, tant pis pour les retardataires ! L'avantage, c'est que la mise à jour des inscriptions via `!addUser` est toujours possible.
 
-Pas d'inquiétude néanmoins, vous pouvez à tout moment ré-ouvrir les inscriptions grâce à la commande `!opentEvent ID`.
+Pas d'inquiétude néanmoins, vous pouvez à tout moment ré-ouvrir les inscriptions grâce à la commande `!openEvent ID`.
 
 
 J'espère que ce guide vous aura été utile. Pour les usages plus avancés, n'hésitez pas à consulter la [documentation officielle](https://raid-helper.com/commands) (en anglais). À bientôt !

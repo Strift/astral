@@ -38,8 +38,26 @@ export default {
 
   data: () => ({
     attrs: null,
-    markdownComponent: null
+    markdownComponent: null,
+    socialImage: 'https://astral.gg/images/astral-socials.png'
   }),
+
+  head () {
+    return {
+      title: this.attrs && this.attrs.title + ' | Astral',
+      meta: this.attrs && [
+        { name: 'author', content: this.attrs.author.name },
+        { name: 'description', content: this.attrs.preview, hid: 'description' },
+        { property: 'og:title', content: this.attrs.title },
+        { property: 'og:description', content: this.attrs.preview },
+        { property: 'og:image', content: this.socialImage },
+        { property: 'og:url', content: this.$route.path },
+        { property: 'og:site_name', content: 'Astral' },
+        { name: 'twitter:image:alt', content: 'Logo Astral' },
+        { name: 'twitter:card', content: 'summary_large_image' }
+      ]
+    }
+  },
 
   filters: {
     capitalize,
