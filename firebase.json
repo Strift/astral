@@ -8,6 +8,13 @@
         "**/.*",
         "**/node_modules/**"
       ],
+      "redirects": [
+        {
+          "source": "/pug",
+          "destination": "https://discord.gg/8xGeqVE",
+          "type": 302
+        }
+      ],
       "rewrites": [
         {
           "source": "**",
