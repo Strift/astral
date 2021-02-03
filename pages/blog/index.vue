@@ -42,7 +42,9 @@ export default {
 
   computed: {
     sortedArticles () {
-      return this.articles.concat().sort((articleA, articleB) => Date.parse(articleB.attributes.date) - Date.parse(articleA.attributes.date))
+      return this.articles
+        .concat()
+        .sort((articleA, articleB) => Date.parse(articleB.attributes.date) - Date.parse(articleA.attributes.date))
     }
   },
 
