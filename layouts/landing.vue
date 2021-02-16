@@ -47,8 +47,8 @@ export default {
     return {
       sections: [
         { text: 'Presentation', url: '/' },
-        { text: 'Progress', url: '/progress' },
-        { text: 'Recrutement', url: '/recrutement', alert: true }
+        { text: 'Progress', url: '/progress/' },
+        { text: 'Recrutement', url: '/recrutement/', alert: true }
       ]
     }
   },

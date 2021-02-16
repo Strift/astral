@@ -21,7 +21,7 @@
       <div class="ml-auto flex">
         <nuxt-link
           v-if="BLOG_RELEASED || blog"
-          to="/blog"
+          to="/blog/"
           title="Blog"
           active-class="border-b-2 pb-1"
           class="hidden sm:inline-flex inline mr-10 lg:mr-16 border-primary"

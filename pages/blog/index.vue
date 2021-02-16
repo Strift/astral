@@ -50,7 +50,7 @@ export default {
 
   filters: {
     permalink (slug) {
-      return `/blog/${slug}`
+      return `/blog/${slug}/`
     }
   }
 }

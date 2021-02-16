@@ -4,7 +4,7 @@
       Dernier article
     </div>
     <nuxt-link
-      to="/blog/organiser-ses-raids-avec-raid-helper"
+      to="/blog/organiser-ses-raids-avec-raid-helper/"
       class="group"
     >
       <div class="bg-gray-lightest text-gray-darker rounded-md shadow-md p-5 w-64 float-on-hover">
