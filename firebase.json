@@ -20,7 +20,8 @@
           "source": "**",
           "destination": "/index.html"
         }
-      ]
+      ],
+      "trailingSlash": true
     },
     {
       "site": "astral-dev",
@@ -35,7 +36,8 @@
           "source": "**",
           "destination": "/index.html"
         }
-      ]
+      ],
+      "trailingSlash": true
     }
   ]
 }
