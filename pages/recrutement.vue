@@ -21,12 +21,12 @@
         </ul>
       </div>
       <a
-        href="https://www.guilded.gg/r/EnrRpynBxl?i=8mRxEkz4"
-        title="Postuler via Guilded"
+        href="https://discord.gg/KFKJJdr"
+        title="Rejoindre le Discord"
         target="_blank"
         class="bg-primary py-4 px-10 rounded my-auto text-black font-title tracking-wider mx-auto mt-12 text-lg"
       >
-        Postuler
+        Contact
       </a>
     </div>
     <div class="classes">
