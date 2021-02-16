@@ -28,7 +28,7 @@ Pour créer un nouvel évènement via Raid-Helper, il vous suffit d'utiliser la 
 
 Chez Astral, nous préférons ne pas restreindre les inscriptions aux raids guilde et organiser nous mêmes les benchs lorsque nécessaire. En revanche, comme nos raids pick-ups suscitent régulièrement une forte affluence, nous préférons définir la composition du raid au préalable et ainsi restreindre les inscriptions en conséquence.
 
-Pour modifier la composition du raid, il faut déjà avoir créé son évènement. Ensuite, utilisez la commande `!editEvent ID` en remplaçant _ID_ par l'ID du message correspondant à l'évènement. Le bot vous contactera à nouveau en vous. Répondez avec l'option correspondant à _role limits_ et c'est parti !
+Pour modifier la composition du raid, il faut déjà avoir créé son évènement. Ensuite, utilisez la commande `!editEvent ID` en remplaçant _ID_ par l'ID du message correspondant à l'évènement. Le bot vous contactera à nouveau en vous proposant une liste d'options correspondant aux propriétés de l'évènement que vous souhaitez modifier. Répondez avec l'option correspondant à _role limits_ et c'est parti !
 
 ## Mettre a jour les inscriptions
 
