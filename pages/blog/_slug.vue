@@ -42,6 +42,12 @@ export default {
     socialImage: 'https://astral.gg/images/astral-socials.png'
   }),
 
+  middleware ({ route, redirect }) {
+    if (route.fullPath === '/blog/organiser-ses-raids-avec-raid-helper/') {
+      redirect(301, 'https://laurentcazanove.com/articles/organiser-ses-raids-avec-raid-helper/')
+    }
+  },
+
   head () {
     if (this.attrs == null) return []
     return {
